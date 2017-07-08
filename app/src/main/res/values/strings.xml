@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">香哈菜谱</string>
+    <array name="find_titles">
+        <item>发现</item>
+        <item>最新</item>
+    </array>
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/login_return_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/a_login_button_return"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="欢迎注册香哈"
+        android:textColor="@color/my_text"
+        android:textSize="25sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:background="#FEFEFE"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/a_login_icon_phone"
+            />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="+86"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/login_name_et"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="手机号"
+            android:inputType="number"
+            android:maxLength="13"
+            android:textColorHint="#D0CFCF"
+            android:textCursorDrawable="@null"
+            android:textSize="13sp"/>
+
+        <ImageView
+            android:id="@+id/login_detil_iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/a_login_icon_shutdown"/>
+    </LinearLayout>
+
+    <include layout="@layout/iterm_dividing_layout"/>
+
+    <!--密码-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:background="#FEFEFE"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/a_login_icon_password"
+            />
+
+        <EditText
+            android:id="@+id/login_password_et"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:textColorHint="#D0CFCF"
+            android:textCursorDrawable="@null"
+            android:textSize="13sp"/>
+
+        <Button
+            android:id="@+id/login_xz_bt"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/login_password"/>
+    </LinearLayout>
+
+    <include layout="@layout/iterm_dividing_layout"/>
+
+
+    <Button
+        android:id="@+id/login_longin_bt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_back"
+        android:text="点击注册"
+        android:textColor="#FFFEFE"/>
+
+</LinearLayout>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1EEE4">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title_backgroup">
+
+        <ImageView
+            android:id="@+id/setting_return_iv"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/z_z_topbar_ico_back_white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/setting_user_rl"
+        android:background="#FEFEFE"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/fragment_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/userphoto"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="1dp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="溘溘绊绊的一辈子"
+            android:textSize="18sp"
+            android:textColor="#000"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="135dp"
+            android:src="@drawable/icon_draf_enter"/>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/setting_news_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FEFEFE">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="消息通知"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_draf_enter"/>
+    </RelativeLayout>
+
+    <include layout="@layout/item_fragment_dividing"/>
+
+
+    <RelativeLayout
+        android:id="@+id/setting_cache__rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FEFEFE">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="清理缓存"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="0.01MB"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <include layout="@layout/item_fragment_dividing"/>
+
+
+    <RelativeLayout
+        android:id="@+id/setting_version__rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FEFEFE">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="检查新版本"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="5.2.5"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <include layout="@layout/item_fragment_dividing"/>
+
+
+    <RelativeLayout
+        android:id="@+id/setting_friends__rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FEFEFE" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="邀请好友"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_draf_enter"/>
+    </RelativeLayout>
+
+    <include layout="@layout/item_fragment_dividing"/>
+
+    <RelativeLayout
+        android:id="@+id/setting_evaluate__rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FEFEFE">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="给香哈评价"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_draf_enter"/>
+    </RelativeLayout>
+
+    <include layout="@layout/item_fragment_dividing"/>
+
+    <RelativeLayout
+        android:id="@+id/fragment_me_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FEFEFE">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="关于我们"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_draf_enter"/>
+    </RelativeLayout>
+
+    <include layout="@layout/item_fragment_dividing"/>
+
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/setting_return_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FEFEFE"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="退出当前账号"
+            android:textSize="15sp"
+            android:textColor="#FF705D"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.a520it.xianghacaipu.view.DropZoomScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lai="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF0EDE3"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_gravity="center">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center">
+            </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:id="@+id/banner_seek_ll"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:background="@drawable/banner_seek_shape"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/i_circle_user_so_so"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 搜菜谱、食材等"
+                    android:textColor="#cecece"/>
+            </LinearLayout>
+
+            <!--指示器-->
+            <LinearLayout
+                android:id="@+id/banner_pointer_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#FFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.a520it.xianghacaipu.view.HomeCategoryView
+                android:id="@+id/home_category"
+                style="@style/HomeCategory"
+                lai:src="@drawable/z_home_main_classification"
+                lai:text="菜谱分类"/>
+
+            <com.a520it.xianghacaipu.view.HomeCategoryView
+                android:id="@+id/home_video"
+                style="@style/HomeCategory"
+                lai:src="@drawable/z_home_main_video"
+                lai:text="视频"/>
+
+            <com.a520it.xianghacaipu.view.HomeCategoryView
+                android:id="@+id/home_live"
+                style="@style/HomeCategory"
+                lai:src="@drawable/z_home_main_live"
+                lai:text="美食养生"/>
+
+            <com.a520it.xianghacaipu.view.HomeCategoryView
+                android:id="@+id/home_mall"
+                style="@style/HomeCategory"
+                lai:src="@drawable/z_home_main_mall"
+                lai:text="商城"/>
+        </LinearLayout>
+
+        <!--香哈头条-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFF"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="香哈头条"
+                android:textColor="#FFA7A7A7"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/enter_matchwords_item"/>
+        </RelativeLayout>
+
+        <com.a520it.xianghacaipu.view.HomeHeadlineListView
+            android:id="@+id/home_headline_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+
+        <!--人气推荐-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFF"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="人气推荐"
+                android:textColor="#FFA7A7A7"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/enter_matchwords_item"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/home_popularity_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/home_optimum_rl"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/home_optimum_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#55000000">
+
+                <TextView
+                    android:id="@+id/home_optimum_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#FFF"/>
+
+                <TextView
+                    android:id="@+id/home_optimum__content_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#FFF"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="最新佳作"
+            android:background="#FFF"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="#FFA7A7A7"/>
+    </LinearLayout>
+</com.a520it.xianghacaipu.view.DropZoomScrollView>

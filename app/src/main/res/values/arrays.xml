@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="myindenttab">
+        <item>全部</item>
+        <item>代付款</item>
+        <item>代发货</item>
+        <item>待收货</item>
+        <item>已完成</item>
+    </array>
+</resources>

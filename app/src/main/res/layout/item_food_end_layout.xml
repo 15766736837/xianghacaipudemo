@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+
+
+    >
+
+    <ImageView
+        android:id="@+id/food_end_iv"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+       android:layout_centerHorizontal="true"
+        android:src="@drawable/z_down_refresh"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/food_end_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="加载更多"
+        android:layout_marginTop="20dp"
+       android:layout_centerHorizontal="true"
+        android:background="#FFFFFF"
+        android:textColor="#C8C8C8"
+        android:textSize="12sp"/>
+
+</RelativeLayout>
