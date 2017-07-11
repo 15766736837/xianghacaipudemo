@@ -11,12 +11,12 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import com.a520it.xianghacaipu.R;
-import com.a520it.xianghacaipu.adapter.RecyclerAdapter;
+import com.a520it.xianghacaipu.adapter.FindRecyclerAdapter;
 import com.a520it.xianghacaipu.bean.FindListBean;
 import com.a520it.xianghacaipu.constant.ActionCon;
 import com.a520it.xianghacaipu.controller.FindController;
 import com.a520it.xianghacaipu.fragmnt.BaseFragment;
-import com.a520it.xianghacaipu.view.DisDecoration;
+import com.a520it.xianghacaipu.view.FindItemDisDecoration;
 import com.github.jdsjlzx.interfaces.OnLoadMoreListener;
 import com.github.jdsjlzx.recyclerview.LuRecyclerView;
 import com.github.jdsjlzx.recyclerview.LuRecyclerViewAdapter;
@@ -33,9 +33,9 @@ public class DiscoveryFragment extends BaseFragment {
     private LuRecyclerView mDiscoveryRv;
     private FindController mFindController;
     private LinearLayoutManager mLinearLayoutManager;
-    private RecyclerAdapter mRecyclerAdapter;
+    private FindRecyclerAdapter mFindRecyclerAdapter;
     private ListView mDiscoveryLv;
-    private DisDecoration mDisDecoration;
+    private FindItemDisDecoration mDisDecoration;
     private SwipeRefreshLayout mSwipeRefresh;
     private LuRecyclerViewAdapter mLRecyclerViewAdapter;
 
@@ -55,7 +55,7 @@ public class DiscoveryFragment extends BaseFragment {
     private void addListDatas(Object obj) {
         FindListBean bean = (FindListBean) obj;
         List<FindListBean.DataBeanX.DataBean> addData = bean.getData().getData();
-        mRecyclerAdapter.loadMore(addData);
+        mFindRecyclerAdapter.loadMore(addData);
         mDiscoveryRv.refreshComplete(10);
         mLRecyclerViewAdapter.notifyDataSetChanged();
 
@@ -65,15 +65,15 @@ public class DiscoveryFragment extends BaseFragment {
         FindListBean bean = (FindListBean) obj;
         List<FindListBean.DataBeanX.DataBean> data = bean.getData().getData();
 
-        mRecyclerAdapter = new RecyclerAdapter(getContext(), data);
+        mFindRecyclerAdapter = new FindRecyclerAdapter(getContext(), data);
         mLinearLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
         mDiscoveryRv.setLayoutManager(mLinearLayoutManager);
         if (mDisDecoration == null) {
-            mDisDecoration = new DisDecoration(getContext(), 13);
+            mDisDecoration = new FindItemDisDecoration(getContext(), 20);
             mDiscoveryRv.addItemDecoration(mDisDecoration);
         }
 
-        mLRecyclerViewAdapter = new LuRecyclerViewAdapter(mRecyclerAdapter);
+        mLRecyclerViewAdapter = new LuRecyclerViewAdapter(mFindRecyclerAdapter);
 
         mDiscoveryRv.setAdapter(mLRecyclerViewAdapter);
 

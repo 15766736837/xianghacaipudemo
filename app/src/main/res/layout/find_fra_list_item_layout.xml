@@ -22,18 +22,20 @@
 
         <TextView
             android:id="@+id/find_fra_lv_item_name"
+            android:textColor="@color/tab_text_normal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="3dp"
+            android:layout_marginTop="10dp"
             android:layout_toRightOf="@id/find_fra_lv_item_head_icon"
             android:text="昵称"
-            android:textSize="20sp"/>
+            android:textSize="@dimen/sp_14"/>
 
         <ImageView
             android:id="@+id/find_fra_lv_item_level"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/find_fra_lv_item_name"
             android:layout_marginLeft="8dp"
             android:layout_toRightOf="@id/find_fra_lv_item_name"
             android:src="@drawable/z_z_ico_level_01"/>
@@ -45,21 +47,24 @@
             android:layout_alignLeft="@id/find_fra_lv_item_name"
             android:layout_below="@id/find_fra_lv_item_name"
             android:layout_marginTop="1dp"
+            android:textSize="@dimen/sp_12"
             android:text="时间"/>
 
         <LinearLayout
+            android:id="@+id/find_fra_lv_item_follow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_marginTop="10dp"
-            android:background="#558e8d8d"
+            android:background="@drawable/shape_lv_item_follow_selected"
             android:gravity="center"
+            android:clickable="true"
             android:orientation="horizontal"
             android:padding="6dp">
 
             <ImageView
-                android:layout_width="13dp"
-                android:layout_height="13dp"
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_10"
                 android:src="@drawable/dish_follow_a"/>
 
             <TextView
@@ -67,7 +72,7 @@
                 android:layout_height="wrap_content"
                 android:text="关注"
                 android:textColor="#fb6753"
-                android:textSize="15sp"/>
+                android:textSize="@dimen/sp_12"/>
         </LinearLayout>
 
         <TextView
@@ -77,10 +82,11 @@
             android:layout_below="@id/find_fra_lv_item_head_icon"
             android:layout_marginTop="10dp"
             android:text="正文"
-            android:lines="3"
             android:maxLines="3"
             android:ellipsize="end"
-            android:textSize="16sp"/>
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/tab_text_normal"
+            android:textSize="@dimen/sp_16"/>
     </RelativeLayout>
 
 
@@ -134,7 +140,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="地址"
-            android:textSize="12sp"/>
+            android:textSize="@dimen/sp_12"/>
     </LinearLayout>
 
     <LinearLayout
@@ -160,7 +166,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1235"
-                android:textSize="16sp"/>
+                android:textSize="@dimen/sp_14"/>
         </LinearLayout>
 
         <View
@@ -184,7 +190,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1235"
-                android:textSize="16sp"/>
+                android:textSize="@dimen/sp_14"/>
         </LinearLayout>
 
         <View
@@ -208,7 +214,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1235"
-                android:textSize="16sp"/>
+                android:textSize="@dimen/sp_14"/>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
