@@ -4,12 +4,12 @@
         "source": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\color\\abc_primary_text_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\zhihu_preview_bottom_toolbar_apply.xml",
-        "source": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\color\\zhihu_preview_bottom_toolbar_apply.xml"
-    },
-    {
         "merged": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\dracula_bottom_toolbar_apply.xml",
         "source": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\color\\dracula_bottom_toolbar_apply.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\zhihu_preview_bottom_toolbar_apply.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\color\\zhihu_preview_bottom_toolbar_apply.xml"
     },
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\switch_thumb_material_dark.xml",
@@ -20,12 +20,12 @@
         "source": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\color\\abc_tint_default.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\switch_thumb_material_light.xml",
-        "source": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\color\\switch_thumb_material_light.xml"
-    },
-    {
         "merged": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_secondary_text_material_light.xml",
         "source": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\switch_thumb_material_light.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\color\\switch_thumb_material_light.xml"
     },
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\dracula_bottom_toolbar_preview.xml",

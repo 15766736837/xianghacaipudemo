@@ -7,6 +7,7 @@ import android.media.ThumbnailUtils;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -22,8 +23,10 @@ import com.a520it.xianghacaipu.R;
 import com.a520it.xianghacaipu.activity.album.GifSizeFilter;
 import com.a520it.xianghacaipu.adapter.AddFuLiaoAdapter;
 import com.a520it.xianghacaipu.adapter.AddItemAdapter;
+import com.a520it.xianghacaipu.adapter.AddStepsAdapter;
 import com.a520it.xianghacaipu.bean.recipe.FuLiaoBean;
 import com.a520it.xianghacaipu.bean.recipe.ZhuLiaoBean;
+import com.a520it.xianghacaipu.bean.step.StepBean;
 import com.a520it.xianghacaipu.utils.LoadImageUtil;
 import com.zhihu.matisse.Matisse;
 import com.zhihu.matisse.MimeType;
@@ -49,7 +52,7 @@ public class SendMenuActivity extends BaseActivity implements View.OnClickListen
     private RecyclerView mAddFuliaoLv;
     public TextView mAddFuliaoTv;
     private Button mAddStepsImgBtn;
-    private ListView mStepsLv;
+    private RecyclerView mStepsLv;
     private Button mAddSetpsBtn;
     private Button mAdjustStepsBtn;
     private RelativeLayout mPrepareTimeRl;
@@ -68,6 +71,7 @@ public class SendMenuActivity extends BaseActivity implements View.OnClickListen
     private ArrayList<ZhuLiaoBean> mZhuLiao = new ArrayList<>();
     private ArrayList<FuLiaoBean> mFuLiao = new ArrayList<>();
     private AddFuLiaoAdapter mAddFuLiaoAdapter;
+    private ArrayList<StepBean> mSteps;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -124,7 +128,20 @@ public class SendMenuActivity extends BaseActivity implements View.OnClickListen
 
         //批量添加步骤图
         mAddStepsImgBtn = (Button) findViewById(R.id.add_stepsImg_btn);
-        mStepsLv = (ListView) findViewById(R.id.steps_lv);
+
+        mSteps = new ArrayList<>();
+        for (int i = 0; i < 3; i++) {
+            mSteps.add(new StepBean(i));
+        }
+        mStepsLv = (RecyclerView) findViewById(R.id.steps_rv);
+        AddStepsAdapter addStepsAdapter = new AddStepsAdapter(this, mSteps);
+        mStepsLv.setAdapter(addStepsAdapter);
+        mStepsLv.setLayoutManager(new LinearLayoutManager(this));
+        //如果可以确定每个item的高度是固定的，设置这个选项可以提高性能
+        mStepsLv.setHasFixedSize(true);
+        //设置增加或删除条目的动画
+        mStepsLv.setItemAnimator(new DefaultItemAnimator());
+
         // TODO: 2017/7/15 0015
         //添加步骤
         mAddSetpsBtn = (Button) findViewById(R.id.add_setps_btn);

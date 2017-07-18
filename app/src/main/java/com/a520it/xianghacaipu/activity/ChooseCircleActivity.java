@@ -37,13 +37,14 @@ public class ChooseCircleActivity extends AppCompatActivity {
 
     public void fabu(View view) {
         for (int i = 0; i < mRg.getChildCount(); i++) {
-            if (mRg.getChildAt(i).isClickable()) {
+            RadioButton childAt = (RadioButton) mRg.getChildAt(i);
+            if (childAt.isChecked()) {
                 Toast.makeText(this, mText + "   发布成功！", Toast.LENGTH_SHORT).show();
                 finish();
-            } else {
-                Toast.makeText(this, "请选中内容", Toast.LENGTH_SHORT).show();
+                return;
             }
         }
+        Toast.makeText(this, "请选中内容！", Toast.LENGTH_SHORT).show();
     }
 
     public void guanbi(View view) {
