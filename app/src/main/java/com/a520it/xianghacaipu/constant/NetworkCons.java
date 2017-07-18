@@ -47,17 +47,11 @@ public class NetworkCons {
         //时分秒
         String sfm = sDateFormat.format(new Date());
         String sfm2 = sDateFormat2.format(new Date());
-<<<<<<< HEAD
+
         Log.v("cherish233", "时间1=" + sfm + "----时间2=" + sfm2);
         String encode = URLEncoder.encode(sfm);
         return nyr + "+" + encode;
-=======
-        Log.v("cherish233","时间1="+sfm+"----时间2="+sfm2);
-//        String encode = URLEncoder.encode(sfm);
-//        return nyr + "+" + encode;
-        return "111";
->>>>>>> xlk
-    }
 
+    }
 }
 

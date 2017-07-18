@@ -69,7 +69,7 @@
         </activity>
         <activity android:name=".activity.PublishActivity"/>
         <activity android:name=".activity.PostingActivity"/>
-        <activity android:name=".activity.PictureActivity"/>
+
 
         <activity android:name=".activity.find.FindItemDetailActivity">
 
