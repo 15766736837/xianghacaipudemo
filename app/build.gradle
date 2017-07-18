@@ -36,5 +36,9 @@ dependencies {
     compile 'com.github.jdsjlzx:LRecyclerView:1.4.3'
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
     compile files('libs/BaiduLBS_Android.jar')
+
     compile files('libs/ShareSDK-Core-3.0.0.jar')
+
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
+
 }
