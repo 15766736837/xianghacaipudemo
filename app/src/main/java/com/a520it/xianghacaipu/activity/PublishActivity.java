@@ -30,7 +30,7 @@ public class PublishActivity extends BaseActivity {
 
     //发菜谱
     public void sendMenu(View view) {
-
+        startActivity(new Intent(this,SendMenuActivity.class));
     }
     //发帖
     public void posting(View view) {

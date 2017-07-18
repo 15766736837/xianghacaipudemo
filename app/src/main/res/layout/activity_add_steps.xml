@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#b6e7f4f4"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <TextView
+                android:paddingLeft="15dp"
+                android:layout_width="wrap_content"
+                android:text="做法步骤（至少3步）"
+                android:textColor="#000000"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/add_stepsImg_btn"
+                android:layout_centerVertical="true"
+                android:text="批量添加步骤图"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="#96ef1b00"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/steps_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <include layout="@layout/activity_bottom"/>
+</LinearLayout>

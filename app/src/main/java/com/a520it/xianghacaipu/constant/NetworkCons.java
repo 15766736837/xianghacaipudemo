@@ -33,8 +33,9 @@ public class NetworkCons {
         String sfm = sDateFormat.format(new Date());
         String sfm2 = sDateFormat2.format(new Date());
         Log.v("cherish233","时间1="+sfm+"----时间2="+sfm2);
-        String encode = URLEncoder.encode(sfm);
-        return nyr + "+" + encode;
+//        String encode = URLEncoder.encode(sfm);
+//        return nyr + "+" + encode;
+        return "111";
     }
 
 }

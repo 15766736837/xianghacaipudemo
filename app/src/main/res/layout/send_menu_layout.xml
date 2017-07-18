@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#fd533c">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="true"
+                    android:onClick="back"
+                    android:text="X"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="发菜谱"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:clickable="true"
+                    android:onClick="save_draft"
+                    android:text="存草稿"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/show_title"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#e7f493">
+
+                <TextView
+                    android:id="@+id/look_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="发原创菜谱可获20 - 120积分，查看积分规则 ->"
+                    android:textColor="@android:color/holo_red_dark"/>
+
+                <TextView
+                    android:id="@+id/close_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:clickable="true"
+                    android:text="x"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="22sp"/>
+            </RelativeLayout>
+
+
+            <FrameLayout
+                android:id="@+id/add_photo_fl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="40dp">
+
+                <ImageView
+                    android:id="@+id/show_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/add_photo_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="40dp"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/z_caipu_upload_up_bigpic"
+                    android:gravity="center"
+                    android:text="添加菜谱效果图（必填）"/>
+            </FrameLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="菜谱名(必填)"
+                app:counterEnabled="true"
+                app:counterMaxLength="40"
+                app:hintAnimationEnabled="true">
+
+                <EditText
+                    android:id="@+id/recipe_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="40"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="心得"
+                app:counterEnabled="true"
+                app:counterMaxLength="140"
+                app:hintAnimationEnabled="true">
+
+                <EditText
+                    android:id="@+id/tips_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="140"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#b6e7f4f4"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="主料（至少一项）"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="主料名称"
+                    android:textColor="#000000"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:text="用量"
+                    android:textColor="#000000"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/add_zhuliao_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/add_zhuliao_tv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#b6e7f4f4"
+                android:clickable="true"
+                android:drawableLeft="@drawable/z_caipu_upload_up_ico_add"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="添加主料"
+                android:textColor="#e25f5f"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#b6e7f4f4"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="辅料"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="辅料名称"
+                    android:textColor="#000000"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:text="用量"
+                    android:textColor="#000000"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/add_fuliao_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/add_fuliao_tv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#b6e7f4f4"
+                android:clickable="true"
+                android:drawableLeft="@drawable/z_caipu_upload_up_ico_add"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="添加辅料"
+                android:textColor="#e25f5f"
+                android:textSize="20sp"/>
+
+            <include layout="@layout/activity_add_steps"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

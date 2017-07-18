@@ -56,7 +56,10 @@
         </activity>
         <activity android:name=".activity.PublishActivity"/>
         <activity android:name=".activity.PostingActivity"/>
-        <activity android:name=".activity.PictureActivity"/>
+        <!-- android:windowSoftInputMode="adjustResize|stateHidden"-->
+        <activity android:name=".activity.ChooseCircleActivity"/>
+        <activity android:name=".activity.SendMenuActivity"/>
+        <activity android:name=".activity.NoticeActivity"/>
     </application>
 
 </manifest>
