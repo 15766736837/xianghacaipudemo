@@ -22,6 +22,9 @@ public class HomeController extends BaseController {
             case INetWorkAction.HOME_ACTION:
                 OkHttpUtil.getInstent().doGet(action, INetWorkRequestUrl.HOME_REQUEST_URl, this);
                 break;
+            case INetWorkAction.HOME_OPTIMUM:
+                OkHttpUtil.getInstent().doGet(action, INetWorkRequestUrl.HOME_OPTIMUM_URL, this);
+                break;
         }
     }
 }

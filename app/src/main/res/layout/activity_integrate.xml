@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/activity_integrate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title_backgroup">
+
+        <ImageView
+            android:id="@+id/integrate_return_iv"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/z_z_topbar_ico_back_white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="积分商城"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:text="兑换记录"
+            android:textSize="14sp"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+
+    <in.srain.cube.views.ptr.PtrFrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/intefrate_refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ptr_duration_to_close="200"
+        app:ptr_duration_to_close_header="300"
+        app:ptr_keep_header_when_refresh="true"
+        app:ptr_pull_to_fresh="false"
+        app:ptr_ratio_of_header_height_to_refresh="1.2"
+        app:ptr_resistance="1.7">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/integrate_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+
+
+</LinearLayout>

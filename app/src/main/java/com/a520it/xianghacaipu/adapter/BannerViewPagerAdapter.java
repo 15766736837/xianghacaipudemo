@@ -1,6 +1,7 @@
 package com.a520it.xianghacaipu.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v4.view.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.a520it.xianghacaipu.R;
+import com.a520it.xianghacaipu.activity.home_category.HomeBannerDetailsActivity;
 import com.a520it.xianghacaipu.bean.HomeBean;
 import com.a520it.xianghacaipu.listerent.SetBannerListener;
 import com.a520it.xianghacaipu.utils.LoadImageUtil;
@@ -77,6 +79,18 @@ public class BannerViewPagerAdapter extends PagerAdapter implements SetBannerLis
         setCategory(position);
 
         container.addView(view);
+
+        //ViewPager Item的点击事件
+        final int finalPosition = position;
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, HomeBannerDetailsActivity.class);
+                intent.putExtra("position", finalPosition);
+                mContext.startActivity(intent);
+            }
+        });
+
         return view;
     }
 

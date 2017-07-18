@@ -42,13 +42,13 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private LinearLayout mMainMyLl;
     private LinearLayout mActivityMain;
     private ArrayList<BaseFragment> mMFragments;
-    public  static  final  String  FOOD_ID = "food_id";
-    public  static  final  String  CONCERN_ID = "food_id";
+    public static final String FOOD_ID = "food_id";
+    public static final String CONCERN_ID = "food_id";
 
     /****************                 */
     private LocationClient mLocationClient;
     public BDLocationListener myListener = new MyLocationListener();
-    public String now_address ;
+    public String now_address;
 
 
     /****************                 */
@@ -145,7 +145,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             //            }
             //
             //            Log.i("BaiduLocationApiDem", sb.toString());
-            Log.i("mylog","--->" +location.getAddrStr());
+            Log.i("mylog", "--->" + location.getAddrStr());
             now_address = location.getAddrStr();
         }
 
@@ -155,7 +155,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         }
 
     }
-    private void initLocation(){
+
+    private void initLocation() {
         LocationClientOption option = new LocationClientOption();
         option.setLocationMode(LocationClientOption.LocationMode.Hight_Accuracy);
         //可选，默认高精度，设置定位模式，高精度，低功耗，仅设备
@@ -163,7 +164,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         option.setCoorType("bd09ll");
         //可选，默认gcj02，设置返回的定位结果坐标系
 
-        int span=1000;
+        int span = 1000;
         option.setScanSpan(span);
         //可选，默认0，即仅定位一次，设置发起定位请求的间隔需要大于等于1000ms才是有效的
 
@@ -193,28 +194,26 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
         mLocationClient.setLocOption(option);
     }
+
     /****************                 */
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        //透明状态栏
-//        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-//        //透明导航栏
-//        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-//        getWindow().requestFeature(Window.FEATURE_NO_TITLE);
-//        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-//            Window window = getWindow();
-//            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
-//                    | WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-//            window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-//                    | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-//                    | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
-//            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-//            window.setStatusBarColor(Color.TRANSPARENT);
-//            window.setNavigationBarColor(Color.TRANSPARENT);
-//        }
+
+
+        /*if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Window window = getWindow();
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
+                    | WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+            window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                    | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                    | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setStatusBarColor(Color.TRANSPARENT);
+            window.setNavigationBarColor(Color.TRANSPARENT);
+        }*/
 
         setContentView(R.layout.activity_main);
 
@@ -233,6 +232,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
 
     }
+
     //初始化
     private void initFragment() {
         //创建队列储存
@@ -244,14 +244,13 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     }
 
 
-
     //fragment切换显示
     private void changeFragment(BaseFragment baseFragment) {
         //开启一个事物
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 
-        if (! baseFragment.isAdded()){
-            transaction.add(R.id.main_fl,baseFragment);
+        if (!baseFragment.isAdded()) {
+            transaction.add(R.id.main_fl, baseFragment);
         }
 
         transaction.show(baseFragment);
@@ -272,37 +271,37 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         switch (view.getId()) {
             case R.id.main_index_ll:   //学做菜
                 changeFragment(mMFragments.get(0));
-                setSeect(mMainIndexLlIv,mMainIndexLlTv);
+                setSeect(mMainIndexLlIv, mMainIndexLlTv);
                 break;
             case R.id.main_find_ll:    //朋友圈
-                setSeect(mMainFindLlIv,mMainFindLlTv);
+                setSeect(mMainFindLlIv, mMainFindLlTv);
                 changeFragment(mMFragments.get(1));
                 break;
             case R.id.main_xiaoxi_ll:   //消息
-                setSeect(mMainXiaoxiLlIv,mMainXiaoxiLlTv);
+                setSeect(mMainXiaoxiLlIv, mMainXiaoxiLlTv);
                 changeFragment(mMFragments.get(2));
                 break;
             case R.id.main_my_ll:       //我的
-                setSeect(mMainMyLlIv,mMainMyLlTv);
+                setSeect(mMainMyLlIv, mMainMyLlTv);
                 changeFragment(mMFragments.get(3));
                 break;
             case R.id.main_upload_tv:  //发动态
-                Intent intent = new Intent(this,PublishActivity.class);
-                intent.putExtra("now_address",now_address);
+                Intent intent = new Intent(this, PublishActivity.class);
+                intent.putExtra("now_address", now_address);
                 startActivity(intent);
                 break;
         }
     }
 
-    private  void setSeect(View v, View viewe){
-        mMainIndexLlIv.setSelected(v == mMainIndexLlIv || viewe == mMainIndexLlIv );
-        mMainIndexLlTv.setSelected(v == mMainIndexLlTv || viewe == mMainIndexLlTv );
-        mMainFindLlIv.setSelected(v == mMainFindLlIv || viewe == mMainFindLlIv );
-        mMainFindLlTv.setSelected(v == mMainFindLlTv || viewe == mMainFindLlTv );
-        mMainXiaoxiLlIv.setSelected(v == mMainXiaoxiLlIv || viewe == mMainXiaoxiLlIv );
-        mMainXiaoxiLlTv.setSelected(v == mMainXiaoxiLlTv || viewe == mMainXiaoxiLlTv );
-        mMainMyLlIv.setSelected(v == mMainMyLlIv || viewe == mMainMyLlIv );
-        mMainMyLlTv.setSelected(v == mMainMyLlTv || viewe == mMainMyLlTv );
+    private void setSeect(View v, View viewe) {
+        mMainIndexLlIv.setSelected(v == mMainIndexLlIv || viewe == mMainIndexLlIv);
+        mMainIndexLlTv.setSelected(v == mMainIndexLlTv || viewe == mMainIndexLlTv);
+        mMainFindLlIv.setSelected(v == mMainFindLlIv || viewe == mMainFindLlIv);
+        mMainFindLlTv.setSelected(v == mMainFindLlTv || viewe == mMainFindLlTv);
+        mMainXiaoxiLlIv.setSelected(v == mMainXiaoxiLlIv || viewe == mMainXiaoxiLlIv);
+        mMainXiaoxiLlTv.setSelected(v == mMainXiaoxiLlTv || viewe == mMainXiaoxiLlTv);
+        mMainMyLlIv.setSelected(v == mMainMyLlIv || viewe == mMainMyLlIv);
+        mMainMyLlTv.setSelected(v == mMainMyLlTv || viewe == mMainMyLlTv);
     }
 
 

@@ -1,10 +1,26 @@
 package com.a520it.xianghacaipu.fragmnt.myindent;
 
-import com.a520it.xianghacaipu.fragmnt.BaseFragment;
+import android.view.View;
+
+import com.a520it.xianghacaipu.R;
+import com.a520it.xianghacaipu.fragmnt.collect.RefreshBaseFragment;
 
 /**
  * Created by ASUS on 2017/7/7.
+ * 已完成界面
  */
 
-public class MyIndentCompleteFragment extends BaseFragment {
+public class MyIndentCompleteFragment extends RefreshBaseFragment {
+
+
+    @Override
+    protected void refreshLoadData() {
+
+    }
+
+    @Override
+    public View createView() {
+        View inflate = View.inflate(getContext(), R.layout.fragment_myindent_null, null);
+        return inflate;
+    }
 }
