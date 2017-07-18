@@ -1,6 +1,13 @@
 package com.a520it.xianghacaipu.utils;
 
+import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.net.Uri;
+import android.provider.MediaStore;
+import android.util.Log;
 import android.widget.ImageView;
 
 import com.a520it.xianghacaipu.R;
@@ -61,4 +68,47 @@ public class LoadImageUtil {
                 .bitmapConfig(Bitmap.Config.ARGB_8888) // default
                 .build();
     }
+
+    /* uri转化为bitmap */
+    public Bitmap getBitmapFromUri(Uri uri, Context c) {
+        try {
+            // 读取uri所在的图片
+            Bitmap bitmap = MediaStore.Images.Media.getBitmap(c.getContentResolver(), uri);
+            return bitmap;
+        } catch (Exception e) {
+            Log.e("[Android]", e.getMessage());
+            Log.e("[Android]", "目录为：" + uri);
+            e.printStackTrace();
+            return null;
+        }
+    }
+    /**
+     * 字符串转换成图片
+     * @param str
+     * @return
+     */
+    public static Bitmap createBitmap(String str) {
+        Bitmap bp = Bitmap.createBitmap(60, 30, Bitmap.Config.ARGB_8888); //画布大小
+        Canvas c = new Canvas(bp);
+        Paint paint1 = new Paint();
+        paint1.setColor(Color.BLACK);
+        c.drawColor(Color.BLUE);//画布颜色
+
+        Paint paint2 = new Paint();//画姓名前边的间隔
+        paint2.setColor(Color.WHITE);
+        paint2.setStrokeWidth(1f);
+        c.drawLine(0, 0, 0, 30, paint2);
+
+        Paint paint = new Paint();
+        paint.setTextSize(20);//字体大小
+        paint.setColor(Color.BLACK);//字体大小
+        paint.setFakeBoldText(true); //粗体
+        paint.setTextSkewX(0);//斜度
+        paint.setTextAlign(Paint.Align.CENTER);
+        c.drawText(str, 30, 20, paint);//文字位置
+        c.save( Canvas.ALL_SAVE_FLAG );//保存
+        c.restore();//
+        return bp;
+    }
+
 }

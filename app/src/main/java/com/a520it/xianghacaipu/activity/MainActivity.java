@@ -56,6 +56,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
         @Override
         public void onReceiveLocation(BDLocation location) {
+//<<<<<<< HEAD
             //
             //            //获取定位结果
             //            StringBuffer sb = new StringBuffer(256);
@@ -145,7 +146,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             //            }
             //
             //            Log.i("BaiduLocationApiDem", sb.toString());
-            Log.i("mylog", "--->" + location.getAddrStr());
+//            Log.i("mylog", "--->" + location.getAddrStr());
+
             now_address = location.getAddrStr();
         }
 

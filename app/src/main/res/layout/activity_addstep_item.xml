@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#b6e7f4f4">
+    <TextView
+        android:id="@+id/num_tv"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="1"
+    android:textSize="18sp"/>
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:hint="不需要填写步骤序号1、2、3..."
+        android:paddingLeft="10dp"
+        android:textSize="10dp"/>
+    <TextView
+        android:layout_below="@+id/title"
+        android:id="@+id/add_photo_tv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:drawableTop="@drawable/z_caipu_upload_up_bigpic"
+        android:gravity="center"
+        android:text="添加菜谱效果图（必填）"/>
+</RelativeLayout>

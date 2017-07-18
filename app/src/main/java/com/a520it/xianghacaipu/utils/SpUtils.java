@@ -3,6 +3,14 @@ package com.a520it.xianghacaipu.utils;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author 小码哥
  * @time 2017/4/24 0024  11:18
@@ -76,5 +84,63 @@ public class SpUtils {
         long result = sp.getLong(key, 0);
         return result;
     }
+
+    /**
+     * 保存文件到手机内存
+     * @param context
+     * @param number
+     * @param psw
+     * @return
+     */
+    public static boolean SaveUserInfo(Context context, String number,
+                                       String psw) {
+        try {
+            File fileDir = context.getFilesDir();
+            File f = new File(fileDir, "data.txt");
+            FileOutputStream fos;
+            fos = new FileOutputStream(f);
+
+            String data = number + "##" + psw;
+            fos.write(data.getBytes());
+            fos.flush();
+            fos.close();
+            return true;
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return false;
+    }
+    /**
+     * 从手机内存读取
+     * @param context
+     * @return
+     */
+    public static Map<String, String> GetUserInfo(Context context) {
+
+        try {
+            File fileDir = context.getFilesDir();
+            File f = new File(fileDir, "data.txt");
+            FileInputStream fis;
+            fis = new FileInputStream(f);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(
+                    fis));
+            String text = reader.readLine();
+            if (!text.isEmpty()) {
+                String split[] = text.split("##");
+                Map<String, String> userInfoMap = new HashMap<String, String>();
+                userInfoMap.put("number", split[0]);
+                userInfoMap.put("psw", split[1]);
+                return userInfoMap;
+            }
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return null;
+
+    }
+
+
 
 }

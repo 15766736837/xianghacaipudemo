@@ -110,6 +110,11 @@
 
             </activity>
         </activity>
+        <!-- android:windowSoftInputMode="adjustResize|stateHidden"-->
+        <activity android:name=".activity.ChooseCircleActivity"/>
+        <activity android:name=".activity.SendMenuActivity"/>
+        <activity android:name=".activity.NoticeActivity"/>
+
     </application>
 
 </manifest>

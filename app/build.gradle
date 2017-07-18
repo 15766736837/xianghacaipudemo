@@ -17,6 +17,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
         }
     }
 }
@@ -44,4 +45,7 @@ dependencies {
 
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
 
+    compile 'com.mylhyl:pickpicture:1.0.0'
+    compile project(':matisse')
+    compile 'com.android.support:design:25.3.1'
 }
