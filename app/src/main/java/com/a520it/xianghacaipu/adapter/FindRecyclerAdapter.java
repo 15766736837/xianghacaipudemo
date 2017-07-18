@@ -28,6 +28,7 @@ public class FindRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     private static final int TYPE_FOOT = 0;
     private static final int TYPE_ITEM = 1;
     private final List<FindListBean.DataBeanX.DataBean> mDatas;
+    private FindRecyclerAdapter.OnItemClickListener onItemClickListener;
     private final Context mContext;
 
     public FindRecyclerAdapter(Context context, List<FindListBean.DataBeanX.DataBean> data) {
@@ -57,11 +58,9 @@ public class FindRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        if(holder instanceof FootViewHolder) {
-            
-        }else if(holder instanceof ItemViewHolder) {
-            ItemViewHolder itemholder = (ItemViewHolder) holder;
+    public void onBindViewHolder(final RecyclerView.ViewHolder holder, int position) {
+
+            final ItemViewHolder itemholder = (ItemViewHolder) holder;
             FindListBean.DataBeanX.DataBean dataBean = mDatas.get(position);
             //昵称
             itemholder.mFindFraLvItemName.setText(dataBean.getCustomer().getNickName());
@@ -88,7 +87,29 @@ public class FindRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             }
             //等级
             setLevel(itemholder, dataBean);
-        }
+
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View v) {
+                if(onItemClickListener != null) {
+                    int pos = itemholder.getLayoutPosition();
+                    onItemClickListener.onItemClick(itemholder.itemView, pos);
+                }
+            }
+        });
+
+        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                if(onItemClickListener != null) {
+                    int pos = holder.getLayoutPosition();
+                    onItemClickListener.onItemLongClick(holder.itemView, pos);
+                }
+                //表示此事件已经消费，不会触发单击事件
+                return true;
+            }
+        });
 
     }
 
@@ -235,5 +256,18 @@ public class FindRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         }
     }
 
+    /**
+     * 设置回调监听
+     *
+     * @param listener
+     */
+    public void setOnItemClickListener(FindRecyclerAdapter.OnItemClickListener listener) {
+        this.onItemClickListener = listener;
+    }
+
+    public interface OnItemClickListener {
+        void onItemClick(View view, int position);
+        void onItemLongClick(View view, int position);
+    }
 
 }

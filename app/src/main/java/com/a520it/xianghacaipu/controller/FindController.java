@@ -52,15 +52,31 @@ public class FindController extends BaseController {
 
                     }
                 });
+
                 break;
+            case ActionCon.NEWADDDETAILDATA:
+                requestAddListData(new Listerner() {
+                    @Override
+                    public void onSuccess(Object obj) {
+                        mListerent.IModechager(ActionCon.NEWADDDETAILDATA, obj);
+                    }
+
+                    @Override
+                    public void onFaiure(Exception e) {
+
+                    }
+                });
+
+                break;
+
 
         }
     }
 
     private DisBean requestListData(final Listerner listerner) {
         mPage = 1;
-        String url =NetworkCons.BASEURL + NetworkCons.getPage(mPage, "");
-        Log.v("cherish233","url="+url);
+        String url = NetworkCons.BASEURL + NetworkCons.getPage(mPage, "");
+        Log.v("cherish233", "url=" + url);
         OkHttpUtil.getInstent().doGet(ActionCon.FINDLISTDATA, url, new OkHttpUtil.Listerner() {
             @Override
             public void onError(IOException e) {
@@ -80,12 +96,34 @@ public class FindController extends BaseController {
 
     }
 
+
     private DisBean requestAddListData(final Listerner listerner) {
         String time = NetworkCons.getTime();
-        mPage = mPage+1;
-        String url =NetworkCons.BASEURL + NetworkCons.getPage(mPage, time);
-        Log.v("cherish233","url="+url);
-        OkHttpUtil.getInstent().doGet(ActionCon.FINDADDLISTDATA,  url, new OkHttpUtil.Listerner() {
+        mPage = mPage + 1;
+        String url = NetworkCons.BASEURL + NetworkCons.getPage(mPage, time);
+        Log.v("cherish233", "url=" + url);
+        OkHttpUtil.getInstent().doGet(ActionCon.FINDADDLISTDATA, url, new OkHttpUtil.Listerner() {
+            @Override
+            public void onError(IOException e) {
+
+            }
+
+            @Override
+            public void onSuccess(int Action, String s) {
+                FindListBean findListBean = JSONObject.parseObject(s, FindListBean.class);
+                listerner.onSuccess(findListBean);
+            }
+        });
+
+        return null;
+
+    }
+
+    private DisBean requestNewAddListData(final Listerner listerner) {
+        String time = NetworkCons.getTime();
+        mPage = mPage + 1;
+        String url = NetworkCons.BASEURL + NetworkCons.getNewPage(mPage, time);
+        OkHttpUtil.getInstent().doGet(ActionCon.FINDADDLISTDATA, url, new OkHttpUtil.Listerner() {
             @Override
             public void onError(IOException e) {
 

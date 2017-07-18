@@ -11,13 +11,12 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <!-- 往SDCard写入数据权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <!--  从SDCard读取数据权限 -->
+    <!-- 从SDCard读取数据权限 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <!--在SDCard中创建与删除文件权限  -->
+    <!-- 在SDCard中创建与删除文件权限 -->
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
-    <!--请求访问使用照相设备-->
+    <!-- 请求访问使用照相设备 -->
     <uses-permission android:name="android.permission.CAMERA"/>
-
 
     <application
         android:name=".application.MyApplication"
@@ -52,11 +51,12 @@
         <activity android:name=".activity.CollectActivity">
         </activity>
         <activity android:name=".activity.MyIndentActivity">
-
         </activity>
         <activity android:name=".activity.PublishActivity"/>
         <activity android:name=".activity.PostingActivity"/>
         <activity android:name=".activity.PictureActivity"/>
+        <activity android:name=".activity.find.FindItemDetailActivity">
+        </activity>
     </application>
 
 </manifest>

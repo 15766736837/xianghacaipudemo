@@ -1,5 +1,6 @@
 package com.a520it.xianghacaipu.fragmnt.find;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Message;
 import android.support.annotation.Nullable;
@@ -11,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import com.a520it.xianghacaipu.R;
+import com.a520it.xianghacaipu.activity.find.FindItemDetailActivity;
 import com.a520it.xianghacaipu.adapter.FindRecyclerAdapter;
 import com.a520it.xianghacaipu.bean.FindListBean;
 import com.a520it.xianghacaipu.constant.ActionCon;
@@ -63,7 +65,7 @@ public class DiscoveryFragment extends BaseFragment {
 
     private void showList(Object obj) {
         FindListBean bean = (FindListBean) obj;
-        List<FindListBean.DataBeanX.DataBean> data = bean.getData().getData();
+        final List<FindListBean.DataBeanX.DataBean> data = bean.getData().getData();
 
         mFindRecyclerAdapter = new FindRecyclerAdapter(getContext(), data);
         mLinearLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
@@ -80,7 +82,21 @@ public class DiscoveryFragment extends BaseFragment {
         //设置底部加载文字提示
         mDiscoveryRv.setFooterViewHint("拼命加载中", "已经全部为你呈现了", "网络不给力啊，点击再试一次吧");
 
+        mFindRecyclerAdapter.setOnItemClickListener(new FindRecyclerAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                FindListBean.DataBeanX.DataBean dataBean = data.get(position);
+                int code = dataBean.getCode();
+                Intent intent = new Intent(getActivity(), FindItemDetailActivity.class);
+                intent.putExtra("codeId",code);
+                startActivity(intent);
+            }
 
+            @Override
+            public void onItemLongClick(View view, int position) {
+
+            }
+        });
     }
 
 

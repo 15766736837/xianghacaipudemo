@@ -7,7 +7,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="50dp"
         android:background="@color/c_title_text_color">
 
         <com.ogaclejapan.smarttablayout.SmartTabLayout
@@ -27,11 +27,11 @@
 
         <ImageView
             android:layout_alignParentBottom="true"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_18"
             android:layout_margin="10dp"
             android:layout_alignTop="@id/find_frag_smarttablayout"
-            android:src="@drawable/home_search_ico"
+            android:src="@drawable/z_z_topbar_ico_so"
             android:tint="@color/c_white_text"
 
             android:layout_alignParentRight="true"/>
