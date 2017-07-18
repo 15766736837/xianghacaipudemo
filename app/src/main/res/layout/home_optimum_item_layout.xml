@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF">
+
+    <ImageView
+        android:id="@+id/background_iv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="180dp"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="堡尔美克杯子蛋糕"
+        android:textColor="#FF514E4E"
+        android:layout_below="@id/background_iv"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"/>
+   <TextView
+        android:id="@+id/des_tv"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textColor="#FFADABAA"
+        android:text="比过家家还有趣的杯子，不用洗直接吃掉，你试过吗？"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_below="@+id/name_tv"
+        android:layout_marginTop="8dp"
+       android:paddingBottom="5dp"/>
+<!--    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/des_tv"
+        android:layout_marginTop="5dp"
+        android:textColor="#FFADABAA"
+        android:textSize="12sp"
+        android:layout_marginLeft="15dp"
+        android:text="今天"
+        android:paddingBottom="5dp"/>-->
+    <TextView
+        android:id="@+id/user_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/des_tv"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textColor="#FFADABAA"
+        android:text="萌城美食"/>
+</RelativeLayout>

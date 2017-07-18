@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_ho_memodule2_category"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF0F0F0">
+    <RelativeLayout
+        android:id="@+id/activity_home_banner_details"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title_backgroup">
+
+        <ImageView
+            android:id="@+id/integrate_return_iv"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/z_z_topbar_ico_back_white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="菜谱分类"
+            android:textColor="#FFF"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/banner_seek_shape"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/category_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="搜菜谱 如 : 糖醋排骨 或 鸡蛋"
+            android:textColor="#ffdddddd"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/i_circle_user_so_so"
+            android:layout_toLeftOf="@id/category_tv"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ListView
+            android:id="@+id/category_lv"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:divider="@null"/>
+        <FrameLayout
+            android:id="@+id/category_fl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF"/>
+    </LinearLayout>
+</LinearLayout>
