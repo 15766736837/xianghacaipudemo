@@ -87,6 +87,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
                 this.overridePendingTransition(R.anim.open_enters_anim,R.anim.open_exits_anim);
                 break;
             case R.id.login_verify_tv:   //验证
+                showShare();
                 break;
             case R.id.login_forget_tv:   //忘记密码
                 break;
@@ -103,6 +104,9 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
                 Toast.makeText(this, "抱歉此功能暂未开发", Toast.LENGTH_SHORT).show();
                 break;
         }
+    }
+    private void showShare() {
+        Toast.makeText(this, "未开发", Toast.LENGTH_SHORT).show();
     }
 
     //登录
