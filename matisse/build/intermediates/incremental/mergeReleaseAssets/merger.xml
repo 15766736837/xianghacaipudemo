@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\code\codess\xianghacaipudemo\matisse\src\main\assets"/><source path="D:\code\codess\xianghacaipudemo\matisse\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="D:\code\codess\xianghacaipudemo\matisse\src\release\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="E:\xiangha\xianghacaipudemo\matisse\src\main\assets"/><source path="E:\xiangha\xianghacaipudemo\matisse\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="E:\xiangha\xianghacaipudemo\matisse\src\release\assets"/></dataSet></merger>
