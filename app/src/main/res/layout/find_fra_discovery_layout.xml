@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/bg">
+    android:background="#e1e1e1">
 
-    <!--<include layout="@layout/find_fra_newest_head_kind"/>-->
+
+    <ListView
+        android:id="@+id/find_fra_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/find_fra_swipe_refresh"
@@ -23,4 +28,4 @@
 
     </android.support.v4.widget.SwipeRefreshLayout>
 
-</LinearLayout>
+</RelativeLayout>

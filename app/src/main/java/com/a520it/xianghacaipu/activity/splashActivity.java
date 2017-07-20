@@ -8,9 +8,6 @@ import android.os.Message;
 import android.widget.LinearLayout;
 
 import com.a520it.xianghacaipu.R;
-import com.mob.MobSDK;
-
-import cn.sharesdk.onekeyshare.OnekeyShare;
 
 public class splashActivity extends BaseActivity {
 
@@ -27,10 +24,6 @@ public class splashActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       //初始化分享
-        MobSDK.init(getApplication(),"1f82da6455f21","9763a4aee7ee4c90e989f3709bf0d8dd");
-
-
         setContentView(R.layout.activity_splash);
         mLinearLayout = (LinearLayout) findViewById(R.id.activity_splash);
         //初始化动画
@@ -44,6 +37,4 @@ public class splashActivity extends BaseActivity {
         anim.setDuration(3000);// 动画持续时间
         anim.start();
     }
-
-
 }

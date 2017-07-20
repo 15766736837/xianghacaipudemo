@@ -1,6 +1,5 @@
 package com.a520it.xianghacaipu.fragmnt;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Message;
 import android.support.v4.view.ViewPager;
@@ -16,19 +15,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.a520it.xianghacaipu.R;
-import com.a520it.xianghacaipu.activity.home_category.HoMemodule2CategoryActivity;
 import com.a520it.xianghacaipu.adapter.BannerViewPagerAdapter;
 import com.a520it.xianghacaipu.adapter.HomeHeadlineAdapter;
-import com.a520it.xianghacaipu.adapter.HomeOptimumAdapter;
 import com.a520it.xianghacaipu.adapter.HomePopularityAdapter;
 import com.a520it.xianghacaipu.bean.HomeBean;
-import com.a520it.xianghacaipu.bean.HomeOptimumBean;
 import com.a520it.xianghacaipu.constant.INetWorkAction;
 import com.a520it.xianghacaipu.controller.HomeController;
 import com.a520it.xianghacaipu.utils.LoadImageUtil;
 import com.a520it.xianghacaipu.view.DisDecoration;
 import com.a520it.xianghacaipu.view.DropZoomScrollView;
-import com.a520it.xianghacaipu.view.HomeOptimumLoadItemView;
 import com.alibaba.fastjson.JSONObject;
 
 import java.util.ArrayList;
@@ -57,9 +52,6 @@ public class IndexFragment extends BaseFragment implements ViewPager.OnPageChang
     private TextView mOptimumTitleTv;
     private TextView mOptimumContentRl;
     private ImageView mOptimumIv;
-    private HomeOptimumBean mHomeOptimumBean;
-    private RecyclerView mHomeOptimumRv;
-    private HomeOptimumAdapter mHomeOptimumAdapter;
 
     @Override
     protected void handleUI(Message msg) {
@@ -85,11 +77,6 @@ public class IndexFragment extends BaseFragment implements ViewPager.OnPageChang
                 LoadImageUtil.getInstance().display(topic.get(0).getImgs(), mOptimumIv);
                 mOptimumTitleTv.setText(topic.get(0).getTitle());
                 mOptimumContentRl.setText(topic.get(0).getSubtitle());
-                break;
-            case INetWorkAction.HOME_OPTIMUM:
-                String jsonStr = (String) msg.obj;
-                mHomeOptimumBean = JSONObject.parseObject(jsonStr, HomeOptimumBean.class);
-                mHomeOptimumAdapter.setNewData(mHomeOptimumBean.getData());
                 break;
         }
     }
@@ -183,7 +170,6 @@ public class IndexFragment extends BaseFragment implements ViewPager.OnPageChang
         mMyViewPagerAdapter = new BannerViewPagerAdapter(getActivity(), mDropZoomScrollView);
         mBannerVp.setAdapter(mMyViewPagerAdapter);
         mBannerVp.addOnPageChangeListener(this);
-        
 
         view.findViewById(R.id.home_category).setOnClickListener(this);
         view.findViewById(R.id.home_video).setOnClickListener(this);
@@ -198,7 +184,7 @@ public class IndexFragment extends BaseFragment implements ViewPager.OnPageChang
         //人气推荐
         mPopularityRv = (RecyclerView) view.findViewById(R.id.home_popularity_rv);
         mPopularityAdapter = new HomePopularityAdapter(getContext());
-        LinearLayoutManager ms = new LinearLayoutManager(getContext());
+        LinearLayoutManager ms= new LinearLayoutManager(getContext());
         ms.setOrientation(LinearLayoutManager.HORIZONTAL);
         mPopularityRv.setLayoutManager(ms);
         mPopularityRv.setAdapter(mPopularityAdapter);
@@ -208,38 +194,10 @@ public class IndexFragment extends BaseFragment implements ViewPager.OnPageChang
         mOptimumTitleTv = (TextView) view.findViewById(R.id.home_optimum_title_tv);
         mOptimumContentRl = (TextView) view.findViewById(R.id.home_optimum__content_tv);
 
-
-        mHomeOptimumRv = (RecyclerView) view.findViewById(R.id.home_optimum_rv);
-        mHomeOptimumAdapter = new HomeOptimumAdapter();
-        LinearLayoutManager homeOptimumRvManager = new LinearLayoutManager(getContext());
-        mHomeOptimumRv.setLayoutManager(homeOptimumRvManager);
-        /**
-         * 解决ScrollView嵌套recycleView滑动延迟
-         * setHasFixedSize(true)
-         * setNestedScrollingEnabled(false)
-         */
-        mHomeOptimumRv.setHasFixedSize(true);
-        mHomeOptimumRv.setNestedScrollingEnabled(false);
-        mHomeOptimumAdapter.setLoadMoreView(new HomeOptimumLoadItemView());
-        mHomeOptimumRv.setAdapter(mHomeOptimumAdapter);
-
-
-/*        mHomeOptimumAdapter.setOnLoadMoreListener(new BaseQuickAdapter.RequestLoadMoreListener() {
-            @Override
-            public void onLoadMoreRequested() {
-                mHomeOptimumRv.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        Log.v("lai", "run: ");
-                    }
-                }, 0);
-            }
-        }, mHomeOptimumRv);*/
     }
 
     private void initData() {
         mController.sendAsynchronization(INetWorkAction.HOME_ACTION);
-        mController.sendAsynchronization(INetWorkAction.HOME_OPTIMUM);
     }
 
 
@@ -252,6 +210,7 @@ public class IndexFragment extends BaseFragment implements ViewPager.OnPageChang
     @Override
     public void onPageSelected(int position) {
         position = position % mPicUrl.size();
+
         for (int i = 0; i < mPointer.getChildCount(); i++) {
             ImageView childAt = (ImageView) mPointer.getChildAt(i);
             childAt.setImageResource(i == position ? R.drawable.banner_dot_selected : R.drawable.banner_dot);
@@ -269,8 +228,7 @@ public class IndexFragment extends BaseFragment implements ViewPager.OnPageChang
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.home_category:
-                Intent categoryIntent = new Intent(getContext(), HoMemodule2CategoryActivity.class);
-                startActivity(categoryIntent);
+                Toast.makeText(getActivity(), "菜谱分类", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.home_video:
                 Toast.makeText(getActivity(), "视频", Toast.LENGTH_SHORT).show();

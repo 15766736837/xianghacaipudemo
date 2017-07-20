@@ -52,14 +52,14 @@
             android:layout_margin="10dp"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@drawable/dome"/>
+            android:src="@drawable/a_login_icon_phone"/>
 
         <TextView
             android:id="@+id/item_sp_name"
             android:layout_gravity="center_vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="高颜值又实用焗饭4件套"
+            android:text="我的世界什么才开始"
             android:textSize="13sp"/>
 
     </LinearLayout>
@@ -86,7 +86,7 @@
             android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="￥ 89.00"
+            android:text="实付款:"
             android:layout_toRightOf="@id/item_sp_fk"
             android:textColor="#FF7D6B"
             android:textSize="13sp"/>

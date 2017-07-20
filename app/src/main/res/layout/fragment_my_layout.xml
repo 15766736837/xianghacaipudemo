@@ -202,7 +202,7 @@
 
 
         <RelativeLayout
-            android:id="@+id/fragment_collectss__rl"
+            android:id="@+id/fragment_collect__rl"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             >

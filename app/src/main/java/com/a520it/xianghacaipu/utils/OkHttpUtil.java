@@ -15,7 +15,7 @@ import okhttp3.Response;
 public class OkHttpUtil {
 
 
-    String Cookil = "device=and#HTCD816t#4.4.2#5.2.5#480#776#open.apps.uc#wifi#429#com.xiangha#1#82756350008xhCode=23b88989a1212e78ae1e5ca3f83f9253umCode=Ao7lrd4L7pVm6lAfyqpOJ9h4ZqVECli4Y1twOZarHlRxxgCode=45e1965a53df4f454d2dbe758cef30fbc8d251bageo=";
+    String Cookil = "private String cookie = device=and#HTC D816t#4.4.2#5.2.5#480#776#open.apps.uc#wifi#344#com.xiangha#1#2684071748xhCode=23b88989a1212e78ae1e5ca3f83f9253umCode=Ao7lrd4L7pVm6lAfyqpOJ9h4ZqVECli4Y1twOZarHlRxxgCode=45e1965a53df4f454d2dbe758cef30fbc8d251bageo=";
 
     private   static OkHttpUtil mOkHttpUtil;
     private final OkHttpClient mOkHttpClient;

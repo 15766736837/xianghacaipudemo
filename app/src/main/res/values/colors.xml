@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">@color/comment_color</color>
+    <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="tab_indicator_selected">#6666FF</color>
     <color name="tab_text_selected">#6666FF</color>
@@ -84,5 +84,4 @@
     <color name="title_backgroup">@color/comment_color</color>
     <color name="transparent">#00ffffff</color>
     <color name="umeng_fb_color_btn_pressed">#ffeeeeee</color>
-
 </resources>
