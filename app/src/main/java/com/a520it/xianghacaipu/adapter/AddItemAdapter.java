@@ -34,13 +34,9 @@ public class AddItemAdapter extends RecyclerView.Adapter<AddItemAdapter.ViewHold
     //将数据与界面进行绑定的操作
     @Override
     public void onBindViewHolder(AddItemAdapter.ViewHolder holder, int position) {
-        if(true){
             holder.mOneEdt.setHint("如：土豆");
             holder.mTowEdt.setHint("如：1个");
-        }else {
-            holder.mOneEdt.setHint("如：油");
-            holder.mTowEdt.setHint("如：适量");
-        }
+
     }
 
     @Override

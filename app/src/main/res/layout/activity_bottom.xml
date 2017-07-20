@@ -6,34 +6,14 @@
               android:background="#b6e7f4f4"
               android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#b6e7f4f4">
 
         <Button
             android:id="@+id/add_setps_btn"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_weight="1"
+            android:layout_gravity="center"
             android:background="@drawable/round_btn"
             android:text="添加步骤"/>
-
-        <View
-            android:layout_width="10dp"
-            android:layout_height="match_parent"
-            android:background="#b6e7f4f4"/>
-
-        <Button
-            android:id="@+id/adjust_steps_btn"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="30dp"
-            android:layout_weight="1"
-            android:background="@drawable/round_btn"
-            android:text="调整步骤"/>
-    </LinearLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
@@ -60,129 +40,56 @@
         android:textColor="#000000"
         android:textSize="20sp"/>
 
-    <RelativeLayout
-        android:id="@+id/prepare_time_rl"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="#ffffff">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <EditText
+            android:id="@+id/prepare_time_edt"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:text="准备时间"
+            android:hint="准备时间"
             android:textSize="16sp"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="5dp"
-            android:background="@drawable/i_arrow_down"/>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/cook_time_rl"
+    <EditText
+        android:id="@+id/cook_time_edt"
+        android:background="#ffffff"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="1dp"
-        android:background="#ffffff">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:text="烹饪时间"
-            android:textSize="16sp"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="5dp"
-            android:background="@drawable/i_arrow_down"/>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/taste_rl"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="2dp"
+        android:hint="烹饪时间"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/taste_edt"
+        android:background="#ffffff"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="1dp"
-        android:background="#ffffff">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:text="口味"
-            android:textSize="16sp"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="5dp"
-            android:background="@drawable/i_arrow_down"/>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/difficult_rl"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="2dp"
+        android:hint="口味"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/difficulty_edt"
+        android:background="#ffffff"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="1dp"
-        android:background="#ffffff">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:text="难度"
-            android:textSize="16sp"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="5dp"
-            android:background="@drawable/i_arrow_down"/>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/exclusive_rl"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="2dp"
+        android:hint="难度"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/exclusive_edt"
+        android:background="#ffffff"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="1dp"
-        android:background="#ffffff">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:text="独家上传"
-            android:textSize="16sp"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="5dp"
-            android:background="@drawable/i_arrow_down"/>
-    </RelativeLayout>
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="2dp"
+        android:hint="是否独家"
+        android:textSize="16sp"/>
 
     <TextView
         android:layout_width="match_parent"
