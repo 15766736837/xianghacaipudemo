@@ -7,22 +7,34 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center">
+        android:layout_height="50dp"
+        android:background="@color/c_title_text_color">
 
         <com.ogaclejapan.smarttablayout.SmartTabLayout
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
             android:id="@+id/find_frag_smarttablayout"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:layout_gravity="center"
-            app:stl_defaultTabTextColor="@color/tab_text_normal"
+            app:stl_defaultTabTextColor="@color/c_white_text"
             app:stl_defaultTabTextHorizontalPadding="12dp"
             app:stl_defaultTabTextSize="16sp"
             app:stl_dividerThickness="0dp"
-            app:stl_indicatorColor="@color/item_divider"
+            app:stl_indicatorColor="@color/c_white_text"
             app:stl_indicatorInterpolation="linear"
             app:stl_indicatorThickness="2dp"
             app:stl_underlineThickness="1dp"/>
+
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_18"
+            android:layout_margin="10dp"
+            android:layout_alignTop="@id/find_frag_smarttablayout"
+            android:src="@drawable/z_z_topbar_ico_so"
+            android:tint="@color/c_white_text"
+
+            android:layout_alignParentRight="true"/>
     </RelativeLayout>
 
     <android.support.v4.view.ViewPager

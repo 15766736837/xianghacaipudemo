@@ -11,11 +11,15 @@ import android.widget.Toast;
 
 import com.a520it.xianghacaipu.R;
 import com.a520it.xianghacaipu.activity.CollectActivity;
+import com.a520it.xianghacaipu.activity.CollectssActivity;
 import com.a520it.xianghacaipu.activity.ConcernActivity;
 import com.a520it.xianghacaipu.activity.FoodCardActivity;
+import com.a520it.xianghacaipu.activity.IntegrateActivity;
 import com.a520it.xianghacaipu.activity.LoginActivity;
 import com.a520it.xianghacaipu.activity.MyIndentActivity;
 import com.a520it.xianghacaipu.activity.SettingActivity;
+import com.a520it.xianghacaipu.activity.VIPActivity;
+import com.a520it.xianghacaipu.activity.WalletActivity;
 import com.a520it.xianghacaipu.listerent.ILoginChangListerent;
 import com.a520it.xianghacaipu.utils.SpUtils;
 
@@ -71,7 +75,7 @@ public class MyFragment extends BaseFragment implements View.OnClickListener ,IL
         mFragmentConcernTv = (TextView) view.findViewById(R.id.fragment_concern__tv);
         view. findViewById(R.id.fragment_collect_rl).setOnClickListener(this);
         view. findViewById(R.id.fragment_history__rl).setOnClickListener(this);
-         view. findViewById(R.id.fragment_collect__rl).setOnClickListener(this);
+         view. findViewById(R.id.fragment_collectss__rl).setOnClickListener(this);
         view. findViewById(R.id.fragment_indent__rl).setOnClickListener(this);
         view.findViewById(R.id.fragment_vip__rl).setOnClickListener(this);
         view. findViewById(R.id.fragment_wallet__rl).setOnClickListener(this);
@@ -122,7 +126,11 @@ public class MyFragment extends BaseFragment implements View.OnClickListener ,IL
                     getActivity().overridePendingTransition(R.anim.open_enters_anim,R.anim.open_exits_anim);
                 }
                 break;
-            case R.id.fragment_collect__rl:  //本地下载
+            case R.id.fragment_collectss__rl:  //本地下载
+                Intent intents = new Intent(getActivity(), CollectssActivity.class);
+                startActivity(intents);
+                getActivity().overridePendingTransition(R.anim.open_enters_anim,R.anim.open_exits_anim);
+
                 break;
             case R.id.fragment_menu_rl:  //菜谱
                 //判断是否登录
@@ -163,10 +171,43 @@ public class MyFragment extends BaseFragment implements View.OnClickListener ,IL
                 }
                 break;
             case R.id.fragment_vip__rl:     //我的会员
+                //判断是否登录
+                if (mLonginSate){
+                    Intent intent = new Intent(getActivity(), VIPActivity.class);
+                    startActivity(intent);
+                    getActivity().overridePendingTransition(R.anim.open_enters_anim,R.anim.open_exits_anim);
+                }else {
+                    //跳转到登录界面
+                    startActivity(new Intent(getActivity(), LoginActivity.class));
+                    getActivity().overridePendingTransition(R.anim.open_enters_anim,R.anim.open_exits_anim);
+                }
+
                 break;
             case R.id.fragment_wallet__rl:      //我的钱包
+                //判断是否登录
+                if (mLonginSate){
+                    Intent intent = new Intent(getActivity(), WalletActivity.class);
+                    startActivity(intent);
+                    getActivity().overridePendingTransition(R.anim.open_enters_anim,R.anim.open_exits_anim);
+                }else {
+                    //跳转到登录界面
+                    startActivity(new Intent(getActivity(), LoginActivity.class));
+                    getActivity().overridePendingTransition(R.anim.open_enters_anim,R.anim.open_exits_anim);
+                }
+
                 break;
             case R.id.fragment_integrate__rl:  //我的积分
+                //判断是否登录
+                if (mLonginSate){
+                    Intent intent = new Intent(getActivity(), IntegrateActivity.class);
+                    startActivity(intent);
+                    getActivity().overridePendingTransition(R.anim.open_enters_anim,R.anim.open_exits_anim);
+                }else {
+                    //跳转到登录界面
+                    startActivity(new Intent(getActivity(), LoginActivity.class));
+                    getActivity().overridePendingTransition(R.anim.open_enters_anim,R.anim.open_exits_anim);
+                }
+
                 break;
             case R.id.fragment_setting__rl:     //系统设置
                 startActivity(new Intent(getActivity(), SettingActivity.class));

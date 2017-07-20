@@ -5,6 +5,7 @@ import android.util.Log;
 
 import com.a520it.xianghacaipu.bean.FindListBean;
 import com.a520it.xianghacaipu.bean.disbean.DisBean;
+import com.a520it.xianghacaipu.bean.disbean.NewestBean;
 import com.a520it.xianghacaipu.constant.ActionCon;
 import com.a520it.xianghacaipu.constant.NetworkCons;
 import com.a520it.xianghacaipu.utils.OkHttpUtil;
@@ -52,15 +53,44 @@ public class FindController extends BaseController {
 
                     }
                 });
+
                 break;
+            case ActionCon.NEWADDDETAILDATA:
+                requestNewAddListData(new Listerner() {
+                    @Override
+                    public void onSuccess(Object obj) {
+                        mListerent.IModechager(ActionCon.NEWADDDETAILDATA, obj);
+                    }
+
+                    @Override
+                    public void onFaiure(Exception e) {
+
+                    }
+                });
+
+                break;
+            case ActionCon.NEWDETAILDATA:
+                requestNewListData(new Listerner() {
+                    @Override
+                    public void onSuccess(Object obj) {
+                        mListerent.IModechager(ActionCon.NEWDETAILDATA, obj);
+                    }
+
+                    @Override
+                    public void onFaiure(Exception e) {
+
+                    }
+                });
+
+                break;
+
 
         }
     }
 
     private DisBean requestListData(final Listerner listerner) {
         mPage = 1;
-        String url =NetworkCons.BASEURL + NetworkCons.getPage(mPage, "");
-        Log.v("cherish233","url="+url);
+        String url = NetworkCons.BASEURL + NetworkCons.getPage(mPage, "");
         OkHttpUtil.getInstent().doGet(ActionCon.FINDLISTDATA, url, new OkHttpUtil.Listerner() {
             @Override
             public void onError(IOException e) {
@@ -79,13 +109,36 @@ public class FindController extends BaseController {
         return null;
 
     }
+    private DisBean requestNewListData(final Listerner listerner) {
+        mPage = 1;
+        String url = NetworkCons.BASEURL + NetworkCons.getNewPage(mPage, "");
+        Log.v("cherish233", "url=" + url);
+        OkHttpUtil.getInstent().doGet(ActionCon.FINDLISTDATA, url, new OkHttpUtil.Listerner() {
+            @Override
+            public void onError(IOException e) {
+                listerner.onFaiure(e);
+
+            }
+
+            @Override
+            public void onSuccess(int Action, String s) {
+                NewestBean newestBean = JSONObject.parseObject(s, NewestBean.class);
+                listerner.onSuccess(newestBean);
+
+            }
+        });
+
+        return null;
+
+    }
+
 
     private DisBean requestAddListData(final Listerner listerner) {
         String time = NetworkCons.getTime();
-        mPage = mPage+1;
-        String url =NetworkCons.BASEURL + NetworkCons.getPage(mPage, time);
-        Log.v("cherish233","url="+url);
-        OkHttpUtil.getInstent().doGet(ActionCon.FINDADDLISTDATA,  url, new OkHttpUtil.Listerner() {
+        mPage = mPage + 1;
+        String url = NetworkCons.BASEURL + NetworkCons.getPage(mPage, time);
+        Log.v("cherish233", "url=" + url);
+        OkHttpUtil.getInstent().doGet(ActionCon.FINDADDLISTDATA, url, new OkHttpUtil.Listerner() {
             @Override
             public void onError(IOException e) {
 
@@ -94,6 +147,27 @@ public class FindController extends BaseController {
             @Override
             public void onSuccess(int Action, String s) {
                 FindListBean findListBean = JSONObject.parseObject(s, FindListBean.class);
+                listerner.onSuccess(findListBean);
+            }
+        });
+
+        return null;
+
+    }
+
+    private DisBean requestNewAddListData(final Listerner listerner) {
+        String time = NetworkCons.getTime();
+        mPage = mPage + 1;
+        String url = NetworkCons.BASEURL + NetworkCons.getNewPage(mPage, time);
+        OkHttpUtil.getInstent().doGet(ActionCon.FINDADDLISTDATA, url, new OkHttpUtil.Listerner() {
+            @Override
+            public void onError(IOException e) {
+
+            }
+
+            @Override
+            public void onSuccess(int Action, String s) {
+                NewestBean findListBean = JSONObject.parseObject(s, NewestBean.class);
                 listerner.onSuccess(findListBean);
             }
         });

@@ -1,5 +1,6 @@
 package com.a520it.xianghacaipu.fragmnt.find;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Message;
 import android.support.annotation.Nullable;
@@ -8,20 +9,22 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 
 import com.a520it.xianghacaipu.R;
-import com.a520it.xianghacaipu.adapter.RecyclerAdapter;
+import com.a520it.xianghacaipu.activity.find.FindItemDetailActivity;
+import com.a520it.xianghacaipu.adapter.FindRecyclerAdapter;
 import com.a520it.xianghacaipu.bean.FindListBean;
 import com.a520it.xianghacaipu.constant.ActionCon;
 import com.a520it.xianghacaipu.controller.FindController;
 import com.a520it.xianghacaipu.fragmnt.BaseFragment;
-import com.a520it.xianghacaipu.view.DisDecoration;
+import com.a520it.xianghacaipu.view.FindItemDisDecoration;
 import com.github.jdsjlzx.interfaces.OnLoadMoreListener;
 import com.github.jdsjlzx.recyclerview.LuRecyclerView;
 import com.github.jdsjlzx.recyclerview.LuRecyclerViewAdapter;
 
 import java.util.List;
+
+import static com.a520it.xianghacaipu.R.color.c_title_text_color;
 
 
 /**
@@ -33,9 +36,8 @@ public class DiscoveryFragment extends BaseFragment {
     private LuRecyclerView mDiscoveryRv;
     private FindController mFindController;
     private LinearLayoutManager mLinearLayoutManager;
-    private RecyclerAdapter mRecyclerAdapter;
-    private ListView mDiscoveryLv;
-    private DisDecoration mDisDecoration;
+    private FindRecyclerAdapter mFindRecyclerAdapter;
+    private FindItemDisDecoration mDisDecoration;
     private SwipeRefreshLayout mSwipeRefresh;
     private LuRecyclerViewAdapter mLRecyclerViewAdapter;
 
@@ -55,7 +57,7 @@ public class DiscoveryFragment extends BaseFragment {
     private void addListDatas(Object obj) {
         FindListBean bean = (FindListBean) obj;
         List<FindListBean.DataBeanX.DataBean> addData = bean.getData().getData();
-        mRecyclerAdapter.loadMore(addData);
+        mFindRecyclerAdapter.loadMore(addData);
         mDiscoveryRv.refreshComplete(10);
         mLRecyclerViewAdapter.notifyDataSetChanged();
 
@@ -63,24 +65,38 @@ public class DiscoveryFragment extends BaseFragment {
 
     private void showList(Object obj) {
         FindListBean bean = (FindListBean) obj;
-        List<FindListBean.DataBeanX.DataBean> data = bean.getData().getData();
+        final List<FindListBean.DataBeanX.DataBean> data = bean.getData().getData();
 
-        mRecyclerAdapter = new RecyclerAdapter(getContext(), data);
+        mFindRecyclerAdapter = new FindRecyclerAdapter(getContext(), data);
         mLinearLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
         mDiscoveryRv.setLayoutManager(mLinearLayoutManager);
         if (mDisDecoration == null) {
-            mDisDecoration = new DisDecoration(getContext(), 13);
+            mDisDecoration = new FindItemDisDecoration(getContext(), 10);
             mDiscoveryRv.addItemDecoration(mDisDecoration);
         }
 
-        mLRecyclerViewAdapter = new LuRecyclerViewAdapter(mRecyclerAdapter);
+        mLRecyclerViewAdapter = new LuRecyclerViewAdapter(mFindRecyclerAdapter);
 
         mDiscoveryRv.setAdapter(mLRecyclerViewAdapter);
 
         //设置底部加载文字提示
-        mDiscoveryRv.setFooterViewHint("拼命加载中", "已经全部为你呈现了", "网络不给力啊，点击再试一次吧");
+        mDiscoveryRv.setFooterViewHint("香哈努力加载……", "已经全部为你呈现了", "网络不给力啊，点击再试一次吧");
+        mDiscoveryRv.setFooterViewColor(c_title_text_color, c_title_text_color,R.color.transparent);
+        mFindRecyclerAdapter.setOnItemClickListener(new FindRecyclerAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                FindListBean.DataBeanX.DataBean dataBean = data.get(position);
+                int code = dataBean.getCode();
+                Intent intent = new Intent(getActivity(), FindItemDetailActivity.class);
+                intent.putExtra("codeId",code);
+                startActivity(intent);
+            }
 
+            @Override
+            public void onItemLongClick(View view, int position) {
 
+            }
+        });
     }
 
 
@@ -89,9 +105,9 @@ public class DiscoveryFragment extends BaseFragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.find_fra_discovery_layout, null);
         mDiscoveryRv = (LuRecyclerView) view.findViewById(R.id.find_fra_rv);
-        mDiscoveryLv = (ListView) view.findViewById(R.id.find_fra_lv);
 
         mSwipeRefresh = (SwipeRefreshLayout) view.findViewById(R.id.find_fra_swipe_refresh);
+        mSwipeRefresh.setColorSchemeColors(getResources().getColor(c_title_text_color));
         return view;
     }
 

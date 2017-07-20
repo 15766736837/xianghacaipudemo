@@ -7,11 +7,4 @@
         <item>待收货</item>
         <item>已完成</item>
     </array>
-    <array name="grid">
-        <item>15分钟以内</item>
-        <item>15~30分钟</item>
-        <item>30分钟~60分钟</item>
-        <item>1小时~1天</item>
-        <item>1天以上</item>
-    </array>
 </resources>
