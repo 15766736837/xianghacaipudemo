@@ -16,12 +16,12 @@
         "source": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     },
     {
-        "merged": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\res\\merged\\release\\color\\dracula_bottom_toolbar_apply.xml",
-        "source": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\src\\main\\res\\color\\dracula_bottom_toolbar_apply.xml"
-    },
-    {
         "merged": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\release\\color\\abc_tint_btn_checkable.xml",
         "source": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\color\\abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\res\\merged\\release\\color\\dracula_bottom_toolbar_apply.xml",
+        "source": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\src\\main\\res\\color\\dracula_bottom_toolbar_apply.xml"
     },
     {
         "merged": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\release\\color\\dracula_bottom_toolbar_apply.xml",
@@ -84,12 +84,12 @@
         "source": "D:\\code\\new\\xianghacaipudemo\\matisse\\src\\main\\res\\color\\zhihu_bottom_toolbar_preview.xml"
     },
     {
-        "merged": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
-    },
-    {
         "merged": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\release\\color\\abc_hint_foreground_material_light.xml",
         "source": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\color\\abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     },
     {
         "merged": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\res\\merged\\release\\color\\abc_tint_btn_checkable.xml",
