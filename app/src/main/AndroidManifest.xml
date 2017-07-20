@@ -17,8 +17,6 @@
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
     <!-- 请求访问使用照相设备 -->
     <uses-permission android:name="android.permission.CAMERA"/>
-
-
     <uses-permission android:name="android.permission.GET_TASKS"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
@@ -31,7 +29,6 @@
     <!-- 蓝牙分享所需的权限 -->
     <uses-permission android:name="android.permission.BLUETOOTH"/>
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
-
 
     <application
         android:name=".application.MyApplication"
@@ -69,52 +66,52 @@
         </activity>
         <activity android:name=".activity.PublishActivity"/>
         <activity android:name=".activity.PostingActivity"/>
-
-
         <activity android:name=".activity.find.FindItemDetailActivity">
-
-            <activity android:name=".activity.IntegrateActivity">
-            </activity>
-            <activity android:name=".activity.WalletActivity">
-            </activity>
-            <activity android:name=".activity.VIPActivity">
-            </activity>
-            <activity android:name=".activity.CollectssActivity">
-            </activity>
-
-            <activity
-                android:name="com.mob.tools.MobUIShell"
-                android:configChanges="keyboardHidden|orientation|screenSize"
-                android:screenOrientation="portrait"
-                android:theme="@android:style/Theme.Translucent.NoTitleBar"
-                android:windowSoftInputMode="stateHidden|adjustResize">
-                <!-- QQ和QQ空间分享 QQ登录的回调必须要配置的 -->
-                <intent-filter>
-                    <data android:scheme="tencent100371282"/>
-                    <action android:name="android.intent.action.VIEW"/>
-
-                    <category android:name="android.intent.category.BROWSABLE"/>
-                    <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-
-                <!-- 新浪微博客户端分享回调必须配置 -->
-                <intent-filter>
-                    <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
-                    <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-            </activity>
-
-            <activity android:name=".activity.home_category.HomeBannerDetailsActivity">
-            </activity>
-            <activity android:name=".activity.home_category.HoMemodule2CategoryActivity">
-
-            </activity>
         </activity>
-        <!-- android:windowSoftInputMode="adjustResize|stateHidden"-->
+        <activity android:name=".activity.IntegrateActivity">
+        </activity>
+        <activity android:name=".activity.WalletActivity">
+        </activity>
+        <activity android:name=".activity.VIPActivity">
+        </activity>
+        <activity android:name=".activity.CollectssActivity">
+        </activity>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!-- QQ和QQ空间分享 QQ登录的回调必须要配置的 -->
+            <intent-filter>
+                <data android:scheme="tencent100371282"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <!-- 新浪微博客户端分享回调必须配置 -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.home_category.HomeBannerDetailsActivity">
+        </activity>
+        <activity android:name=".activity.home_category.HoMemodule2CategoryActivity">
+        </activity>
+        <!-- android:windowSoftInputMode="adjustResize|stateHidden" -->
         <activity android:name=".activity.ChooseCircleActivity"/>
         <activity android:name=".activity.SendMenuActivity"/>
         <activity android:name=".activity.NoticeActivity"/>
-
+        <activity android:name=".activity.home_category.HomeCategoryDetailsActivity">
+        </activity>
+        <activity android:name=".activity.home_category.HomeHeadlineItemActivity">
+        </activity>
     </application>
 
 </manifest>

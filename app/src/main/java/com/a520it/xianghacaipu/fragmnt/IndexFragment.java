@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -17,6 +18,7 @@ import android.widget.Toast;
 
 import com.a520it.xianghacaipu.R;
 import com.a520it.xianghacaipu.activity.home_category.HoMemodule2CategoryActivity;
+import com.a520it.xianghacaipu.activity.home_category.HomeHeadlineItemActivity;
 import com.a520it.xianghacaipu.adapter.BannerViewPagerAdapter;
 import com.a520it.xianghacaipu.adapter.HomeHeadlineAdapter;
 import com.a520it.xianghacaipu.adapter.HomeOptimumAdapter;
@@ -60,6 +62,7 @@ public class IndexFragment extends BaseFragment implements ViewPager.OnPageChang
     private HomeOptimumBean mHomeOptimumBean;
     private RecyclerView mHomeOptimumRv;
     private HomeOptimumAdapter mHomeOptimumAdapter;
+    private List<HomeBean.DataBean.NousBean> mNous;
 
     @Override
     protected void handleUI(Message msg) {
@@ -95,9 +98,9 @@ public class IndexFragment extends BaseFragment implements ViewPager.OnPageChang
     }
 
     private void initHeadline() {
-        List<HomeBean.DataBean.NousBean> nous = mHomeBean.getData().getNous();
-        nous.add(null);
-        mHomeHeadlineAdapter.setDatas(nous);
+        mNous = mHomeBean.getData().getNous();
+        mNous.add(null);
+        mHomeHeadlineAdapter.setDatas(mNous);
     }
 
     private void initPopularity() {
@@ -194,6 +197,19 @@ public class IndexFragment extends BaseFragment implements ViewPager.OnPageChang
         mHeadlineLv = (ListView) view.findViewById(R.id.home_headline_lv);
         mHomeHeadlineAdapter = new HomeHeadlineAdapter();
         mHeadlineLv.setAdapter(mHomeHeadlineAdapter);
+        mHeadlineLv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if (position < 2){
+                    int code = mNous.get(position).getCode();
+                    Intent intent = new Intent(getActivity(), HomeHeadlineItemActivity.class);
+                    intent.putExtra(HomeHeadlineItemActivity.CODE, code);
+                    startActivity(intent);
+                }else{
+                    Toast.makeText(getContext(), "广告", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
         //人气推荐
         mPopularityRv = (RecyclerView) view.findViewById(R.id.home_popularity_rv);

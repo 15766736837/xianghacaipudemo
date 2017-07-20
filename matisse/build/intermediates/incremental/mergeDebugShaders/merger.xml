@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="E:\xiangha\xianghacaipudemo\matisse\src\main\shaders"/></dataSet><dataSet config="debug"><source path="E:\xiangha\xianghacaipudemo\matisse\src\debug\shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="D:\code\new\xianghacaipudemo\matisse\src\main\shaders"/></dataSet><dataSet config="debug"><source path="D:\code\new\xianghacaipudemo\matisse\src\debug\shaders"/></dataSet></merger>

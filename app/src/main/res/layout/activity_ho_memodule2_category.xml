@@ -58,10 +58,14 @@
             android:layout_height="match_parent"
             android:scrollbars="none"
             android:divider="@null"/>
-        <FrameLayout
-            android:id="@+id/category_fl"
+        <GridView
+            android:id="@+id/category_gv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#FFF"/>
+            android:numColumns="3"
+            android:background="#FFF"
+            android:padding="10dp"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"/>
     </LinearLayout>
 </LinearLayout>

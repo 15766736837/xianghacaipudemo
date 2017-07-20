@@ -16,4 +16,6 @@ public interface INetWorkAction {
     int HOME_BANNER_BREAKFAST_FRAGMENT = 5;
     int HOME_BANNER_LUNCH_FRAGMENT = 6;
     int HOME_BANNER_SUPPER_FRAGMENT = 7;
+
+    int HOME_CATEGORY_DETAILS = 8;
 }

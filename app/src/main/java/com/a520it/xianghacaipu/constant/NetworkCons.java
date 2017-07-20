@@ -53,5 +53,6 @@ public class NetworkCons {
         return nyr + "+" + encode;
 
     }
+
 }
 
