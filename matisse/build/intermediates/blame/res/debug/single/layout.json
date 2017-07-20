@@ -4,12 +4,12 @@
         "source": "C:\\Users\\Administrator\\Desktop\\code\\clone\\xianghacaipudemo\\matisse\\src\\main\\res\\layout\\fragment_preview_item.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\code\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
-        "source": "C:\\Users\\Administrator\\Desktop\\code\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\select_dialog_item_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Administrator\\Desktop\\code\\clone\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "C:\\Users\\Administrator\\Desktop\\code\\clone\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\code\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\code\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\select_dialog_item_material.xml"
     },
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\code\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
@@ -76,24 +76,24 @@
         "source": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_action.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\code\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
-        "source": "C:\\Users\\Administrator\\Desktop\\code\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_popup_menu_header_item_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
         "source": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\code\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\code\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\code\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_media_selection.xml",
         "source": "C:\\Users\\Administrator\\Desktop\\code\\xianghacaipudemo\\matisse\\src\\main\\res\\layout\\fragment_media_selection.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\code\\clone\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
-        "source": "C:\\Users\\Administrator\\Desktop\\code\\clone\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_popup_menu_header_item_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\Administrator\\Desktop\\code\\clone\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
         "source": "C:\\Users\\Administrator\\Desktop\\code\\clone\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\code\\clone\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\code\\clone\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\res\\merged\\debug\\layout\\media_grid_content.xml",
