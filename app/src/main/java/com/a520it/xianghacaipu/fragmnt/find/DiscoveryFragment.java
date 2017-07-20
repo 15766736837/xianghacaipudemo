@@ -9,7 +9,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 
 import com.a520it.xianghacaipu.R;
 import com.a520it.xianghacaipu.activity.find.FindItemDetailActivity;
@@ -25,6 +24,8 @@ import com.github.jdsjlzx.recyclerview.LuRecyclerViewAdapter;
 
 import java.util.List;
 
+import static com.a520it.xianghacaipu.R.color.c_title_text_color;
+
 
 /**
  * Created by simon on 2017/6/16.
@@ -36,7 +37,6 @@ public class DiscoveryFragment extends BaseFragment {
     private FindController mFindController;
     private LinearLayoutManager mLinearLayoutManager;
     private FindRecyclerAdapter mFindRecyclerAdapter;
-    private ListView mDiscoveryLv;
     private FindItemDisDecoration mDisDecoration;
     private SwipeRefreshLayout mSwipeRefresh;
     private LuRecyclerViewAdapter mLRecyclerViewAdapter;
@@ -71,7 +71,7 @@ public class DiscoveryFragment extends BaseFragment {
         mLinearLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
         mDiscoveryRv.setLayoutManager(mLinearLayoutManager);
         if (mDisDecoration == null) {
-            mDisDecoration = new FindItemDisDecoration(getContext(), 20);
+            mDisDecoration = new FindItemDisDecoration(getContext(), 10);
             mDiscoveryRv.addItemDecoration(mDisDecoration);
         }
 
@@ -80,8 +80,8 @@ public class DiscoveryFragment extends BaseFragment {
         mDiscoveryRv.setAdapter(mLRecyclerViewAdapter);
 
         //设置底部加载文字提示
-        mDiscoveryRv.setFooterViewHint("拼命加载中", "已经全部为你呈现了", "网络不给力啊，点击再试一次吧");
-
+        mDiscoveryRv.setFooterViewHint("香哈努力加载……", "已经全部为你呈现了", "网络不给力啊，点击再试一次吧");
+        mDiscoveryRv.setFooterViewColor(c_title_text_color, c_title_text_color,R.color.transparent);
         mFindRecyclerAdapter.setOnItemClickListener(new FindRecyclerAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
@@ -105,9 +105,9 @@ public class DiscoveryFragment extends BaseFragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.find_fra_discovery_layout, null);
         mDiscoveryRv = (LuRecyclerView) view.findViewById(R.id.find_fra_rv);
-        mDiscoveryLv = (ListView) view.findViewById(R.id.find_fra_lv);
 
         mSwipeRefresh = (SwipeRefreshLayout) view.findViewById(R.id.find_fra_swipe_refresh);
+        mSwipeRefresh.setColorSchemeColors(getResources().getColor(c_title_text_color));
         return view;
     }
 

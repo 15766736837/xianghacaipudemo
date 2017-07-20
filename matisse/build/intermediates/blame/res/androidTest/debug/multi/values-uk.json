@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-uk\\values-uk.xml",
+        "outputFile": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-uk\\values-uk.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 397
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -32,7 +32,7 @@
                     "endOffset": 507
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -51,7 +51,7 @@
                     "endOffset": 615
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -70,7 +70,7 @@
                     "endOffset": 738
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -89,7 +89,7 @@
                     "endOffset": 840
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -108,7 +108,7 @@
                     "endOffset": 946
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -127,7 +127,7 @@
                     "endOffset": 1032
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -146,7 +146,7 @@
                     "endOffset": 1140
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -165,7 +165,7 @@
                     "endOffset": 1258
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -184,7 +184,7 @@
                     "endOffset": 1337
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -203,7 +203,7 @@
                     "endOffset": 1417
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -222,7 +222,7 @@
                     "endOffset": 1498
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -241,7 +241,7 @@
                     "endOffset": 1604
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -260,7 +260,7 @@
                     "endOffset": 1711
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -279,7 +279,7 @@
                     "endOffset": 1809
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -298,7 +298,7 @@
                     "endOffset": 1917
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -317,7 +317,7 @@
                     "endOffset": 2023
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -336,7 +336,7 @@
                     "endOffset": 2132
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -355,7 +355,7 @@
                     "endOffset": 2256
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -374,7 +374,7 @@
                     "endOffset": 2356
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -393,7 +393,7 @@
                     "endOffset": 2403
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -412,7 +412,7 @@
                     "endOffset": 2462
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -431,7 +431,7 @@
                     "endOffset": 2523
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -450,7 +450,7 @@
                     "endOffset": 2569
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -469,7 +469,7 @@
                     "endOffset": 2610
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -488,7 +488,7 @@
                     "endOffset": 2662
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -507,7 +507,7 @@
                     "endOffset": 2707
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -526,7 +526,7 @@
                     "endOffset": 2777
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -545,7 +545,7 @@
                     "endOffset": 2873
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -564,7 +564,7 @@
                     "endOffset": 2965
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -583,7 +583,7 @@
                     "endOffset": 3034
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -602,7 +602,7 @@
                     "endOffset": 3128
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -621,7 +621,7 @@
                     "endOffset": 3198
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -640,7 +640,7 @@
                     "endOffset": 3252
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -659,7 +659,7 @@
                     "endOffset": 3333
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -678,7 +678,7 @@
                     "endOffset": 3434
                 },
                 "from": {
-                    "file": "D:\\code\\new\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\XHcode\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -691,7 +691,7 @@
         ]
     },
     {
-        "outputFile": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-uk\\values-uk.xml",
+        "outputFile": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-uk\\values-uk.xml",
         "map": [
             {
                 "to": {
@@ -703,7 +703,7 @@
                     "endOffset": 397
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -723,7 +723,7 @@
                     "endOffset": 507
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -742,7 +742,7 @@
                     "endOffset": 615
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -761,7 +761,7 @@
                     "endOffset": 738
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -780,7 +780,7 @@
                     "endOffset": 840
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -799,7 +799,7 @@
                     "endOffset": 946
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -818,7 +818,7 @@
                     "endOffset": 1032
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -837,7 +837,7 @@
                     "endOffset": 1140
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -856,7 +856,7 @@
                     "endOffset": 1258
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -875,7 +875,7 @@
                     "endOffset": 1337
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -894,7 +894,7 @@
                     "endOffset": 1417
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -913,7 +913,7 @@
                     "endOffset": 1498
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -932,7 +932,7 @@
                     "endOffset": 1604
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -951,7 +951,7 @@
                     "endOffset": 1711
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -970,7 +970,7 @@
                     "endOffset": 1809
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -989,7 +989,7 @@
                     "endOffset": 1917
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -1008,7 +1008,7 @@
                     "endOffset": 2023
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -1027,7 +1027,7 @@
                     "endOffset": 2132
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -1046,7 +1046,7 @@
                     "endOffset": 2256
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -1065,7 +1065,7 @@
                     "endOffset": 2356
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -1084,7 +1084,7 @@
                     "endOffset": 2403
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -1103,7 +1103,7 @@
                     "endOffset": 2462
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -1122,7 +1122,7 @@
                     "endOffset": 2523
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -1141,7 +1141,7 @@
                     "endOffset": 2569
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -1160,7 +1160,7 @@
                     "endOffset": 2610
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -1179,7 +1179,7 @@
                     "endOffset": 2662
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -1198,7 +1198,7 @@
                     "endOffset": 2707
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -1217,7 +1217,7 @@
                     "endOffset": 2777
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -1236,7 +1236,7 @@
                     "endOffset": 2873
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -1255,7 +1255,7 @@
                     "endOffset": 2965
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -1274,7 +1274,7 @@
                     "endOffset": 3034
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -1293,7 +1293,7 @@
                     "endOffset": 3128
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -1312,7 +1312,7 @@
                     "endOffset": 3198
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -1331,7 +1331,7 @@
                     "endOffset": 3252
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\bundles\\debug\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -1350,7 +1350,7 @@
                     "endOffset": 3333
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -1369,7 +1369,7 @@
                     "endOffset": 3434
                 },
                 "from": {
-                    "file": "D:\\code\\xianghacaipu\\xianghacaipu\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
+                    "file": "D:\\Android\\AndroidCode\\homework\\xianghacaipudemo\\matisse\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-uk\\values-uk.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,

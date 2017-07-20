@@ -14,10 +14,8 @@ import com.a520it.xianghacaipu.fragmnt.BaseFragment;
 import com.a520it.xianghacaipu.fragmnt.home_banner.BreakfastFragment;
 import com.a520it.xianghacaipu.fragmnt.home_banner.LunchFragment;
 import com.a520it.xianghacaipu.fragmnt.home_banner.SupperFragment;
-import com.a520it.xianghacaipu.utils.ShareUtils;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class HomeBannerDetailsActivity extends AppCompatActivity implements View.OnClickListener {
@@ -30,7 +28,6 @@ public class HomeBannerDetailsActivity extends AppCompatActivity implements View
     private TextView supper_tv;
     private TextView supper_line;
     private List<BaseFragment> mFragments;
-    private ImageView integrate_share_iv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +43,6 @@ public class HomeBannerDetailsActivity extends AppCompatActivity implements View
 
     private void initView() {
         integrate_return_iv = (ImageView) findViewById(R.id.integrate_return_iv);
-        integrate_share_iv = (ImageView) findViewById(R.id.integrate_share_iv);
         lunch_tv = (TextView) findViewById(R.id.lunch_tv);
         lunch_line = (TextView) findViewById(R.id.lunch_line);
         breakfast_tv = (TextView) findViewById(R.id.breakfast_tv);
@@ -95,7 +91,6 @@ public class HomeBannerDetailsActivity extends AppCompatActivity implements View
         lunch_tv.setOnClickListener(this);
         supper_tv.setOnClickListener(this);
         integrate_return_iv.setOnClickListener(this);
-        integrate_share_iv.setOnClickListener(this);
     }
 
     @Override
@@ -116,10 +111,6 @@ public class HomeBannerDetailsActivity extends AppCompatActivity implements View
             case R.id.integrate_return_iv:
                 finish();
                 break;
-            case R.id.integrate_share_iv:
-                HashMap<String, String> map = new HashMap<>();
-                ShareUtils.showShare(this, map);
-                break;
         }
     }
 
@@ -139,8 +130,8 @@ public class HomeBannerDetailsActivity extends AppCompatActivity implements View
         //开启一个事物
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 
-        if (!baseFragment.isAdded()) {
-            transaction.add(R.id.fragment_fl, baseFragment);
+        if (! baseFragment.isAdded()){
+            transaction.add(R.id.fragment_fl,baseFragment);
         }
 
         transaction.show(baseFragment);

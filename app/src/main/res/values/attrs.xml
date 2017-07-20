@@ -25,4 +25,9 @@
         <attr name="text_color" format="color"/>
         <attr name="src" format="reference|color"/>
     </declare-styleable>
+
+    <declare-styleable name="LoweImageView">
+        <!-- 比例=宽/高 -->
+        <attr name="ratio" format="float" />
+    </declare-styleable>
 </resources>

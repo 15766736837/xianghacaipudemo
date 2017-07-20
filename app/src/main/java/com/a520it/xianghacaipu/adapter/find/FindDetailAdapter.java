@@ -90,9 +90,7 @@ public class FindDetailAdapter extends BaseMultiItemQuickAdapter<MultiItem, Base
         circleImageView.setLayoutParams(textParams);
         return circleImageView;
     }
-
-
-
+    
     private TextView getTextView() {
         TextView textView = new TextView(mContext);
         LinearLayout.LayoutParams textParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);

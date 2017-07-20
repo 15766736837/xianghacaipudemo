@@ -15,41 +15,41 @@
         android:background="@color/c_title_text_color">
 
         <ImageView
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="@dimen/dp_18"
             android:id="@+id/find_item_detail_topbar_back"
             android:layout_width="@dimen/dp_18"
             android:layout_height="@dimen/dp_18"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_18"
             android:layout_marginLeft="@dimen/dp_18"
             android:src="@drawable/z_z_topbar_ico_back_white"/>
 
         <ImageView
-            android:layout_alignParentBottom="true"
             android:id="@+id/find_item_detail_topbar_fav"
             android:layout_width="@dimen/dp_18"
             android:layout_height="@dimen/dp_18"
-            android:layout_marginRight="@dimen/dp_18"
+            android:layout_alignParentBottom="true"
             android:layout_marginBottom="@dimen/dp_18"
+            android:layout_marginRight="@dimen/dp_18"
             android:layout_toLeftOf="@+id/find_item_detail_topbar_share"
             android:src="@drawable/z_caipu_xiangqing_topbar_ico_fav"/>
 
         <ImageView
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="@dimen/dp_18"
             android:id="@+id/find_item_detail_topbar_share"
             android:layout_width="@dimen/dp_18"
             android:layout_height="@dimen/dp_18"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_18"
             android:layout_marginRight="@dimen/dp_18"
             android:layout_toLeftOf="@+id/find_item_detail_topbar_more"
             android:src="@drawable/z_z_topbar_ico_share"/>
 
         <ImageView
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="@dimen/dp_18"
             android:id="@+id/find_item_detail_topbar_more"
             android:layout_width="@dimen/dp_18"
             android:layout_height="@dimen/dp_18"
+            android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dp_18"
             android:layout_marginRight="@dimen/dp_18"
             android:src="@drawable/i_ad_more"/>
     </RelativeLayout>
@@ -110,10 +110,10 @@
                 android:textSize="@dimen/dp_14"/>
 
             <TextView
-                android:clickable="true"
                 android:layout_width="@dimen/dp_60"
                 android:layout_height="match_parent"
                 android:background="@color/myself_gray_bg"
+                android:clickable="true"
                 android:gravity="center"
                 android:text="发送"
                 android:textColor="@color/quan_text_red_color"

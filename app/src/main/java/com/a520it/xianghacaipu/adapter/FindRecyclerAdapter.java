@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.a520it.xianghacaipu.R;
 import com.a520it.xianghacaipu.bean.FindListBean;
 import com.a520it.xianghacaipu.utils.LoadImageUtil;
+import com.a520it.xianghacaipu.view.LoweImageView;
 
 import java.util.List;
 
@@ -125,9 +126,10 @@ public class FindRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         int size = dataBean.getImgs().size() >= 3 ? 3 : dataBean.getImgs().size();
         for (int i = 0; i < size; i++) {
             //设置图片控件,并设置属性
-            ImageView imageView = new ImageView(mContext);
-            imageView.setScaleType(ImageView.ScaleType.FIT_XY);
-            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(0, 220, 1);
+            LoweImageView imageView = new LoweImageView(mContext);
+            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+            imageView.setRatio(1);
+            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1);
             layoutParams.setMargins(5, 5, 5, 5);
             imageView.setLayoutParams(layoutParams);
             //            AsyncImageLoader.getInstance(mContext).displayImage(dataBean.getImgs().get(i), imageView);

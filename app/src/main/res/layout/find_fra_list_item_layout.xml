@@ -18,7 +18,7 @@
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_marginTop="3dp"
-            android:src="@mipmap/ic_launcher"/>
+            android:src="@drawable/xianghatouxiang"/>
 
         <TextView
             android:id="@+id/find_fra_lv_item_name"
@@ -102,11 +102,11 @@
         android:id="@+id/find_fra_lv_item_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="#558e8d8d"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/item_address_bg"
         android:gravity="center"
         android:orientation="horizontal"
-        android:padding="3dp">
+        android:padding="5dp">
 
         <ImageView
             android:layout_width="15dp"

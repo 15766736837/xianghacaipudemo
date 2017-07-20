@@ -5,7 +5,10 @@ import android.os.Bundle;
 import android.os.Message;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.ImageView;
 
+import com.a520it.xianghacaipu.R;
 import com.a520it.xianghacaipu.activity.BaseActivity;
 import com.a520it.xianghacaipu.adapter.find.FindDetailAdapter;
 import com.a520it.xianghacaipu.bean.disbean.DetailBean;
@@ -87,7 +90,12 @@ public class FindItemDetailActivity extends BaseActivity {
 
     private void initView() {
         mDetailRv = (RecyclerView) findViewById(com.a520it.xianghacaipu.R.id.find_item_detail_rv);
-
-
+        ImageView back = (ImageView) findViewById(R.id.find_item_detail_topbar_back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 }
